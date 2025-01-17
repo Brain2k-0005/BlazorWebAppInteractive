@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bemi\\source\\repos\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj": {}
+    "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bemi\\source\\repos\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj": {
+    "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bemi\\source\\repos\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj",
+        "projectUniqueName": "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj",
         "projectName": "BlazorWebAppInteractive",
-        "projectPath": "C:\\Users\\bemi\\source\\repos\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj",
+        "projectPath": "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj",
         "packagesPath": "C:\\Users\\bemi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bemi\\source\\repos\\BlazorWebAppInteractive\\obj\\",
+        "outputPath": "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
