@@ -1,0 +1,30 @@
+﻿@rendermode InteractiveServer
+<MudHidden Breakpoint="Breakpoint.MdAndDown">
+    <MudStack Row="true" Wrap="Wrap.NoWrap">
+        <MudText Align="Align.Center" GutterBottom="false" Typo="Typo.subtitle1">Attention, you have not saved the changes...</MudText>
+        <MudButton OnClick="OnCancelClicked" Variant="Variant.Outlined" Color="Color.Warning">Reset changes</MudButton>
+        <MudButton onclick="OnSaveClicked" Variant="Variant.Filled" Color="Color.Success">Save changes</MudButton>
+    </MudStack>
+</MudHidden>
+
+<MudHidden Breakpoint="Breakpoint.LgAndUp">
+    <MudStack Row="false" Wrap="Wrap.NoWrap">
+        <MudText Align="Align.Center" GutterBottom="false" Typo="Typo.subtitle1">Attention, you have not saved the changes...</MudText>
+        <MudButton OnClick="OnCancelClicked" Variant="Variant.Outlined" Color="Color.Warning">Reset changes</MudButton>
+        <MudButton OnClick="OnSaveClicked" Variant="Variant.Filled" Color="Color.Success">Save changes</MudButton>
+    </MudStack>
+</MudHidden>
+
+<style>
+    .mud-snackbar {
+    max-width: 100vw;
+    }
+</style>
+
+@code
+{
+    [Parameter]
+    public EventCallback OnSaveClicked { get; set; }
+    [Parameter]
+    public EventCallback OnCancelClicked { get; set; }
+}

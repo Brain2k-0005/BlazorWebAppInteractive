@@ -1,0 +1,1271 @@
+{
+  "Version": 1,
+  "Hash": "39ClGTN3qqZFSCZwdoj63bqZOTVNzKl9xeE+zp4CxPM=",
+  "Source": "BlazorWebAppInteractive",
+  "BasePath": "_content/BlazorWebAppInteractive",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BlazorWebAppInteractive\\wwwroot",
+      "Source": "BlazorWebAppInteractive",
+      "ContentRoot": "C:\\Users\\bemi\\source\\repos\\BlazorWebAppInteractive\\wwwroot\\",
+      "BasePath": "_content/BlazorWebAppInteractive",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\eraser.cur",
+      "SourceId": "CodeBeam.MudBlazor.Extensions",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\",
+      "BasePath": "_content/CodeBeam.MudBlazor.Extensions",
+      "RelativePath": "eraser.cur",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8puvc5nbz2",
+      "Integrity": "1GL+TjmZdDm3eGG+MG1FLkkZF8SOwo3eG/7qsNX0HuU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\eraser.cur"
+    },
+    {
+      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\Mud_Secondary.png",
+      "SourceId": "CodeBeam.MudBlazor.Extensions",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\",
+      "BasePath": "_content/CodeBeam.MudBlazor.Extensions",
+      "RelativePath": "Mud_Secondary.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tig1qhobl3",
+      "Integrity": "G3hYUw4Ps9P/IQ3lw2zu96RSZaOf4zU+4QkXkH8Xi3Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\Mud_Secondary.png"
+    },
+    {
+      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.css",
+      "SourceId": "CodeBeam.MudBlazor.Extensions",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\",
+      "BasePath": "_content/CodeBeam.MudBlazor.Extensions",
+      "RelativePath": "MudExtensions.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xsd2jx2kvi",
+      "Integrity": "nxZmtgE04ACxiob+f/vhW2jZ+cf2fkxwSN0zyIIbLwo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.js",
+      "SourceId": "CodeBeam.MudBlazor.Extensions",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\",
+      "BasePath": "_content/CodeBeam.MudBlazor.Extensions",
+      "RelativePath": "MudExtensions.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d4to29pfwb",
+      "Integrity": "kwDBiAv/G4OWRKbuGFmGPZhOyCXcoyBE5iitK8cQ79E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\pencil.cur",
+      "SourceId": "CodeBeam.MudBlazor.Extensions",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\",
+      "BasePath": "_content/CodeBeam.MudBlazor.Extensions",
+      "RelativePath": "pencil.cur",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cpli8oaqtf",
+      "Integrity": "oDnErTJbRIXAeq4Awzx/PNkRW2XA0ClXG7BIA/jTt9E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\pencil.cur"
+    },
+    {
+      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\extensions.mudblazor.staticinput\\3.0.0-beta.2\\staticwebassets\\NavigationObserver.js",
+      "SourceId": "Extensions.MudBlazor.StaticInput",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\extensions.mudblazor.staticinput\\3.0.0-beta.2\\staticwebassets\\",
+      "BasePath": "_content/Extensions.MudBlazor.StaticInput",
+      "RelativePath": "NavigationObserver.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b2m59dspxv",
+      "Integrity": "DQQ0ep5io47h8x2tPy4zVHllqtAOzX1DjC8oCgmNdEU=",
+      "CopyToOutputDirectory": "Always",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\extensions.mudblazor.staticinput\\3.0.0-beta.2\\staticwebassets\\NavigationObserver.js"
+    },
+    {
+      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js",
+      "SourceId": "Heron.BlazorQRScanner",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\",
+      "BasePath": "_content/Heron.BlazorQRScanner",
+      "RelativePath": "Heron.BlazorQRScanner.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zzpc7bak2r",
+      "Integrity": "nyHDzFzCd+Me0yG8Fwcz8HINPi4W38cYEmrh/dvnlig=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js"
+    },
+    {
+      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js.map",
+      "SourceId": "Heron.BlazorQRScanner",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\",
+      "BasePath": "_content/Heron.BlazorQRScanner",
+      "RelativePath": "Heron.BlazorQRScanner.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wj0be1roq2",
+      "Integrity": "dAYIDD/F7uucFsFCKu0+yoQ7RGPWpXiXmCBhqZb57PU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.css",
+      "SourceId": "Heron.MudCalendar",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\",
+      "BasePath": "_content/Heron.MudCalendar",
+      "RelativePath": "Heron.MudCalendar.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "faxze0q8id",
+      "Integrity": "uf4PQ2Q8ySCG/UC5q3ijiJviTSsBWo0T07PqXC0hAYw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.js",
+      "SourceId": "Heron.MudCalendar",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\",
+      "BasePath": "_content/Heron.MudCalendar",
+      "RelativePath": "Heron.MudCalendar.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k9r48tgq6e",
+      "Integrity": "+IBpAsog3EbAuRKpM5TF+HPxVE2i/qbwDjA/ynGrkF4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3dmmitqg3v",
+      "Integrity": "t6Cs3Anw0lssF1OdDJG1SEQAn0E5qfvRczv05XoLraM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rkr93ottrr",
+      "Integrity": "JbmjZvxR4tLFLSgV1iJMEFqHW+E9BP20xnOtJdC4dZU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\bemi\\source\\repos\\BlazorWebAppInteractive\\wwwroot\\favicon.ico",
+      "SourceId": "BlazorWebAppInteractive",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bemi\\source\\repos\\BlazorWebAppInteractive\\wwwroot\\",
+      "BasePath": "_content/BlazorWebAppInteractive",
+      "RelativePath": "favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2jeq8efc6q",
+      "Integrity": "8kNQh+LErZHx3sMz237BHWFasAGQ88EWakJrWWYOxTA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "_content/CodeBeam.MudBlazor.Extensions/eraser.8puvc5nbz2.cur",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\eraser.cur",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1GL+TjmZdDm3eGG+MG1FLkkZF8SOwo3eG/7qsNX0HuU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Oct 2023 16:14:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8puvc5nbz2"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1GL+TjmZdDm3eGG+MG1FLkkZF8SOwo3eG/7qsNX0HuU="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/CodeBeam.MudBlazor.Extensions/eraser.cur"
+        }
+      ]
+    },
+    {
+      "Route": "_content/CodeBeam.MudBlazor.Extensions/eraser.cur",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\eraser.cur",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1GL+TjmZdDm3eGG+MG1FLkkZF8SOwo3eG/7qsNX0HuU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Oct 2023 16:14:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1GL+TjmZdDm3eGG+MG1FLkkZF8SOwo3eG/7qsNX0HuU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/CodeBeam.MudBlazor.Extensions/Mud_Secondary.png",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\Mud_Secondary.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G3hYUw4Ps9P/IQ3lw2zu96RSZaOf4zU+4QkXkH8Xi3Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Feb 2023 13:25:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-G3hYUw4Ps9P/IQ3lw2zu96RSZaOf4zU+4QkXkH8Xi3Y="
+        }
+      ]
+    },
+    {
+      "Route": "_content/CodeBeam.MudBlazor.Extensions/Mud_Secondary.tig1qhobl3.png",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\Mud_Secondary.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G3hYUw4Ps9P/IQ3lw2zu96RSZaOf4zU+4QkXkH8Xi3Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Feb 2023 13:25:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tig1qhobl3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-G3hYUw4Ps9P/IQ3lw2zu96RSZaOf4zU+4QkXkH8Xi3Y="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/CodeBeam.MudBlazor.Extensions/Mud_Secondary.png"
+        }
+      ]
+    },
+    {
+      "Route": "_content/CodeBeam.MudBlazor.Extensions/MudExtensions.min.css",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29662"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nxZmtgE04ACxiob+f/vhW2jZ+cf2fkxwSN0zyIIbLwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 May 2024 19:01:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nxZmtgE04ACxiob+f/vhW2jZ+cf2fkxwSN0zyIIbLwo="
+        }
+      ]
+    },
+    {
+      "Route": "_content/CodeBeam.MudBlazor.Extensions/MudExtensions.min.d4to29pfwb.js",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4816"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kwDBiAv/G4OWRKbuGFmGPZhOyCXcoyBE5iitK8cQ79E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 20:20:09 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d4to29pfwb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kwDBiAv/G4OWRKbuGFmGPZhOyCXcoyBE5iitK8cQ79E="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/CodeBeam.MudBlazor.Extensions/MudExtensions.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "_content/CodeBeam.MudBlazor.Extensions/MudExtensions.min.js",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4816"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kwDBiAv/G4OWRKbuGFmGPZhOyCXcoyBE5iitK8cQ79E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 20:20:09 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kwDBiAv/G4OWRKbuGFmGPZhOyCXcoyBE5iitK8cQ79E="
+        }
+      ]
+    },
+    {
+      "Route": "_content/CodeBeam.MudBlazor.Extensions/MudExtensions.min.xsd2jx2kvi.css",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29662"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nxZmtgE04ACxiob+f/vhW2jZ+cf2fkxwSN0zyIIbLwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 May 2024 19:01:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xsd2jx2kvi"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nxZmtgE04ACxiob+f/vhW2jZ+cf2fkxwSN0zyIIbLwo="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/CodeBeam.MudBlazor.Extensions/MudExtensions.min.css"
+        }
+      ]
+    },
+    {
+      "Route": "_content/CodeBeam.MudBlazor.Extensions/pencil.cpli8oaqtf.cur",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\pencil.cur",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "326"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oDnErTJbRIXAeq4Awzx/PNkRW2XA0ClXG7BIA/jTt9E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Oct 2023 16:14:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cpli8oaqtf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oDnErTJbRIXAeq4Awzx/PNkRW2XA0ClXG7BIA/jTt9E="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/CodeBeam.MudBlazor.Extensions/pencil.cur"
+        }
+      ]
+    },
+    {
+      "Route": "_content/CodeBeam.MudBlazor.Extensions/pencil.cur",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\pencil.cur",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "326"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oDnErTJbRIXAeq4Awzx/PNkRW2XA0ClXG7BIA/jTt9E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Oct 2023 16:14:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oDnErTJbRIXAeq4Awzx/PNkRW2XA0ClXG7BIA/jTt9E="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Extensions.MudBlazor.StaticInput/NavigationObserver.b2m59dspxv.js",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\extensions.mudblazor.staticinput\\3.0.0-beta.2\\staticwebassets\\NavigationObserver.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6863"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DQQ0ep5io47h8x2tPy4zVHllqtAOzX1DjC8oCgmNdEU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 13:00:31 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b2m59dspxv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DQQ0ep5io47h8x2tPy4zVHllqtAOzX1DjC8oCgmNdEU="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Extensions.MudBlazor.StaticInput/NavigationObserver.js"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Extensions.MudBlazor.StaticInput/NavigationObserver.js",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\extensions.mudblazor.staticinput\\3.0.0-beta.2\\staticwebassets\\NavigationObserver.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6863"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DQQ0ep5io47h8x2tPy4zVHllqtAOzX1DjC8oCgmNdEU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 13:00:31 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DQQ0ep5io47h8x2tPy4zVHllqtAOzX1DjC8oCgmNdEU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Heron.BlazorQRScanner/Heron.BlazorQRScanner.js",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131820"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nyHDzFzCd+Me0yG8Fwcz8HINPi4W38cYEmrh/dvnlig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 12:23:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nyHDzFzCd+Me0yG8Fwcz8HINPi4W38cYEmrh/dvnlig="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Heron.BlazorQRScanner/Heron.BlazorQRScanner.js.map",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136085"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dAYIDD/F7uucFsFCKu0+yoQ7RGPWpXiXmCBhqZb57PU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 12:23:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dAYIDD/F7uucFsFCKu0+yoQ7RGPWpXiXmCBhqZb57PU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Heron.MudCalendar/Heron.MudCalendar.min.css",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5007"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uf4PQ2Q8ySCG/UC5q3ijiJviTSsBWo0T07PqXC0hAYw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 16:39:46 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uf4PQ2Q8ySCG/UC5q3ijiJviTSsBWo0T07PqXC0hAYw="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Heron.MudCalendar/Heron.MudCalendar.min.faxze0q8id.css",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5007"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uf4PQ2Q8ySCG/UC5q3ijiJviTSsBWo0T07PqXC0hAYw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 16:39:46 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "faxze0q8id"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uf4PQ2Q8ySCG/UC5q3ijiJviTSsBWo0T07PqXC0hAYw="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Heron.MudCalendar/Heron.MudCalendar.min.css"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Heron.MudCalendar/Heron.MudCalendar.min.js",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5097"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+IBpAsog3EbAuRKpM5TF+HPxVE2i/qbwDjA/ynGrkF4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 06:40:32 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+IBpAsog3EbAuRKpM5TF+HPxVE2i/qbwDjA/ynGrkF4="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Heron.MudCalendar/Heron.MudCalendar.min.k9r48tgq6e.js",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5097"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+IBpAsog3EbAuRKpM5TF+HPxVE2i/qbwDjA/ynGrkF4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 06:40:32 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k9r48tgq6e"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+IBpAsog3EbAuRKpM5TF+HPxVE2i/qbwDjA/ynGrkF4="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Heron.MudCalendar/Heron.MudCalendar.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.3dmmitqg3v.css",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595288"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t6Cs3Anw0lssF1OdDJG1SEQAn0E5qfvRczv05XoLraM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 23:42:23 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3dmmitqg3v"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-t6Cs3Anw0lssF1OdDJG1SEQAn0E5qfvRczv05XoLraM="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/MudBlazor/MudBlazor.min.css"
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.css",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595288"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t6Cs3Anw0lssF1OdDJG1SEQAn0E5qfvRczv05XoLraM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 23:42:23 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-t6Cs3Anw0lssF1OdDJG1SEQAn0E5qfvRczv05XoLraM="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "54243"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JbmjZvxR4tLFLSgV1iJMEFqHW+E9BP20xnOtJdC4dZU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 23:42:23 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JbmjZvxR4tLFLSgV1iJMEFqHW+E9BP20xnOtJdC4dZU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.rkr93ottrr.js",
+      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "54243"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JbmjZvxR4tLFLSgV1iJMEFqHW+E9BP20xnOtJdC4dZU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 23:42:23 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rkr93ottrr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JbmjZvxR4tLFLSgV1iJMEFqHW+E9BP20xnOtJdC4dZU="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/MudBlazor/MudBlazor.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "favicon.2jeq8efc6q.ico",
+      "AssetFile": "C:\\Users\\bemi\\source\\repos\\BlazorWebAppInteractive\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8kNQh+LErZHx3sMz237BHWFasAGQ88EWakJrWWYOxTA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 06 Nov 2024 09:48:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2jeq8efc6q"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8kNQh+LErZHx3sMz237BHWFasAGQ88EWakJrWWYOxTA="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "C:\\Users\\bemi\\source\\repos\\BlazorWebAppInteractive\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8kNQh+LErZHx3sMz237BHWFasAGQ88EWakJrWWYOxTA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 06 Nov 2024 09:48:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8kNQh+LErZHx3sMz237BHWFasAGQ88EWakJrWWYOxTA="
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+is_global = true
+build_property.MudDebugAnalyzer = 
+build_property.MudAllowedAttributePattern = 
+build_property.MudIllegalParameters = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BlazorWebAppInteractive
+build_property.RootNamespace = BlazorWebAppInteractive
+build_property.ProjectDir = C:\Users\bemi\source\repos\BlazorWebAppInteractive\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\bemi\source\repos\BlazorWebAppInteractive
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/App.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcQXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/Dialogs/ProfileImageChange.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcRGlhbG9nc1xQcm9maWxlSW1hZ2VDaGFuZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcTGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcTGF5b3V0XE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/Pages/FAQ.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcRkFRLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/Pages/Login/ConfirmPage.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcTG9naW5cQ29uZmlybVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/Pages/Login/ForgotPassword.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcTG9naW5cRm9yZ290UGFzc3dvcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/Pages/Login/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcTG9naW5cTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/Pages/Login/LoginSSR.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcTG9naW5cTG9naW5TU1IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/Pages/Login/ResetPassword.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcTG9naW5cUmVzZXRQYXNzd29yZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/Pages/Logout/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcTG9nb3V0XExvZ291dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/Pages/Logout/LogoutSSR.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcTG9nb3V0XExvZ291dFNTUi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/Pages/Profile/Profile.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcUHJvZmlsZVxQcm9maWxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/Pages/Profile/ProfileSSR.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcUHJvZmlsZVxQcm9maWxlU1NSLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/Pages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/PopOver/NotificationPopOver.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUG9wT3ZlclxOb3RpZmljYXRpb25Qb3BPdmVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUm91dGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/Snackbar/SaveProfile.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcU25hY2tiYXJcU2F2ZVByb2ZpbGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/BlazorWebAppInteractive/Frontend/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcX0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,148 @@
+﻿@using BlazorWebAppInteractive.Frontend.PopOver
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@inherits LayoutComponentBase
+@inject AuthenticationStateProvider stateProvider
+@inject ThemeService ThemeService
+@inject ProfilePictureService ProfilePictureService
+@inject IAccountService AccountService
+
+<MudPopoverProvider/>
+
+<MudDialogProvider/>
+
+<MudSnackbarProvider/>
+
+<MudThemeProvider @ref="@_mudThemeProvider" Theme="@ThemeService.CurrentTheme" IsDarkMode="_DarkMode" />
+
+<MudLayout>
+    <MudAppBar Elevation="0" Dense="true" Fixed="true">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        <MudText Typo="Typo.h5" Class="ml-3 clickable-text" @onclick="@(() => NavigationManager.NavigateTo("/home",false))">
+            BlazorWebAppInteractive
+        </MudText>
+        <MudSpacer />
+        <AuthorizeView>
+            <Authorized>
+                <MudBadge Content="3" Overlap="true" Dot="true" Color="Color.Error">
+                    <MudIconButton OnClick="TogglePopOver" Size="MudBlazor.Size.Small" Class="ml-2" Icon="@Icons.Material.Filled.Notifications" Color="Color.Surface" />
+                </MudBadge>
+                <NotificationPopOver IsOpen="@IsPopOverOpen" IsOpenChanged="@((value) => IsPopOverOpen = value)" Notifications="@Notifications" AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.TopRight" />
+            </Authorized>
+        </AuthorizeView>
+        <MudIconButton Size="MudBlazor.Size.Small" Class="mr-2" OnClick="DarkModeToggle" Icon="@(_DarkMode==true ? Icons.Material.Filled.LightMode : Icons.Material.Filled.DarkMode)" Color="@(_DarkMode==true ? Color.Warning : Color.Dark)" />
+        <AuthorizeView>
+            <Authorized>
+                <MudMenu AnchorOrigin="Origin.BottomLeft" TransformOrigin="Origin.BottomLeft" FullWidth="false">
+                    <ActivatorContent>
+                        <MudAvatar Size="MudBlazor.Size.Medium">
+                            <MudImage Style="max-width:100%" Width="5" Height="5" Src="@ProfilePictureService.CurrentProfilepicture" />
+                        </MudAvatar>
+                    </ActivatorContent>
+                    <ChildContent>
+                        <MudMenuItem Href="/profile/settings">Profile</MudMenuItem>
+                    </ChildContent>
+                </MudMenu>
+            </Authorized>
+        </AuthorizeView>
+    </MudAppBar>
+    <MudDrawer OverlayAutoClose="false" Anchor="Anchor.Left" @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Never" Elevation="0" Breakpoint="Breakpoint.Xs" Variant="@DrawerVariant.Temporary" Style="height:100%" Overlay="false">
+        <MudDrawerHeader>
+            <MudStack Row="true" AlignItems="AlignItems.Center">
+                <MudIconButton Icon="@Icons.Material.Filled.Close" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+                <span>Menu</span>
+            </MudStack>
+        </MudDrawerHeader>
+        <NavMenu />
+    </MudDrawer>
+    <MudMainContent Style="height:100vh;width:100%;position:absolute;top:0px;left:0px">
+        <MudContainer Gutters="false" MaxWidth="MaxWidth.False" Class="mt-0 p-0 m-0" Style="height:100%;width:100%;">
+            @Body
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>
+
+<MudInputStyler BorderColor="@(_DarkMode ? ThemeService.CurrentTheme.PaletteDark.Primary.Value : ThemeService.CurrentTheme.PaletteLight.Primary.Value)"
+LabelColor="@(_DarkMode ? ThemeService.CurrentTheme.PaletteDark.Primary.Value : ThemeService.CurrentTheme.PaletteLight.Primary.Value)" Always="true" />
+
+
+@code {
+    private bool _drawerOpen = false;
+    private ApplicationUser? _User;
+    bool _DarkMode = false;
+    private MudThemeProvider _mudThemeProvider;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Subscribe to theme and profile change events
+        ThemeService.OnThemeChangedAsync += HandleThemeChange;
+        ProfilePictureService.OnProfileChangedAsync += HandleThemeChange;
+
+        // Initialize the default theme
+        ThemeService.InitializeTheme(ColorPreset.JUSTMAMI);
+
+        // Get authentication state
+        var authState = await stateProvider.GetAuthenticationStateAsync();
+        if (authState?.User?.Identity?.IsAuthenticated != true)
+            return;
+
+        // Get the user details
+        _User = await AccountService.GetUserByClaim(authState.User);
+        if (_User == null)
+            return;
+
+        // Apply user-specific theme and profile picture
+        ThemeService.InitializeTheme(_User.ColorPreset);
+
+        if (!string.IsNullOrEmpty(_User.ProfilePicturePath))
+        {
+            ProfilePictureService.CurrentProfilepicture = _User.ProfilePicturePath;
+        }
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            _DarkMode = await _mudThemeProvider.GetSystemPreference();
+            StateHasChanged();
+        }
+    }
+
+    private async Task HandleThemeChange()
+    {
+        await InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        ThemeService.OnThemeChangedAsync -= HandleThemeChange;
+        ProfilePictureService.OnProfileChangedAsync -= HandleThemeChange;
+    }
+
+    private void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+    void DarkModeToggle()
+    {
+        _DarkMode = !_DarkMode;
+    }
+
+    private bool IsPopOverOpen { get; set; }
+    private List<NotificationPopOver.Notification> Notifications { get; set; } = new()
+    {
+        new NotificationPopOver.Notification { Id = 1, Message = "New message received", IsRead = false, Timestamp = DateTime.Now.AddMinutes(-10) },
+        new NotificationPopOver.Notification { Id = 2, Message = "Update available", IsRead = false, Timestamp = DateTime.Now.AddHours(-1) },
+        new NotificationPopOver.Notification { Id = 3, Message = "Meeting reminder", IsRead = false, Timestamp = DateTime.Now.AddHours(-3) }
+    };
+
+    private int UnreadCount => Notifications.Count(n => !n.IsRead);
+
+    private void TogglePopOver() => IsPopOverOpen = !IsPopOverOpen;
+}
+
+<style>
+    .clickable-text {
+        cursor: pointer;
+    }
+</style>

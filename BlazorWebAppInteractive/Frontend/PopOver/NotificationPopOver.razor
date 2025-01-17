@@ -1,0 +1,59 @@
+﻿<MudPopover  Fixed="true" AnchorOrigin="AnchorOrigin" TransformOrigin="TransformOrigin" Open="@IsOpen">
+    <MudPaper Elevation="0" Style="width: 100vw; background-color: var(--mud-palette-background); max-width: 500px">
+        <MudTabs Style="height:100vh" AlwaysShowScrollButtons="true">
+            <MudTabPanel Text="For you">
+                @if (Notifications.Any())
+                {
+                    <MudList T="Notification">
+                        @foreach (var notification in Notifications)
+                        {
+                            <MudListItem Class="discord-notification-item">
+                                <MudAvatar Size="MudBlazor.Size.Small" Class="mr-2">
+                                    <MudIcon Icon="@Icons.Material.Filled.Person" />
+                                </MudAvatar>
+                                <MudStack Row="true">
+                                    <MudStack>
+                                        <MudText Typo="Typo.body1">@notification.Message</MudText>
+                                        <MudText Typo="Typo.caption" Color="Color.Secondary">
+                                            @notification.Timestamp.ToString("g")
+                                        </MudText>
+                                    </MudStack>
+                                    <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Class="ml-auto" />
+                                </MudStack>
+                            </MudListItem>
+                            <MudDivider />
+                        }
+                    </MudList>
+                }
+                else
+                {
+                    <MudText Typo="Typo.body2" Color="Color.Secondary" Class="text-center">
+                        No notifications available.
+                    </MudText>
+                }
+            </MudTabPanel>
+            <MudTabPanel Text="Unread messages">
+                <MudText Typo="Typo.body2" Color="Color.Secondary">No unread messages yet.</MudText>
+            </MudTabPanel>
+            <MudTabPanel Text="Invitations">
+                <MudText Typo="Typo.body2" Color="Color.Secondary">No mentions yet.</MudText>
+            </MudTabPanel>
+        </MudTabs>
+    </MudPaper>
+</MudPopover>
+
+@code {
+    [Parameter] public bool IsOpen { get; set; }
+    [Parameter] public EventCallback<bool> IsOpenChanged { get; set; }
+    [Parameter] public List<Notification> Notifications { get; set; } = new();
+    [Parameter] public Origin AnchorOrigin { get; set; } = Origin.BottomCenter;
+    [Parameter] public Origin TransformOrigin { get; set; } = Origin.BottomCenter;
+
+    public class Notification
+    {
+        public int Id { get; set; }
+        public string Message { get; set; }
+        public bool IsRead { get; set; }
+        public DateTime Timestamp { get; set; }
+    }
+}

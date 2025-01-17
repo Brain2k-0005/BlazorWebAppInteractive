@@ -1,0 +1,78 @@
+﻿@page "/login"
+@inject ITokenService TokenProvider
+@inject IAccountService AccountService
+@inject IHttpContextAccessor HttpContext
+@rendermode InteractiveServer
+
+<PageTitle>Sign in</PageTitle>
+<MudContainer MaxWidth="MaxWidth.Small">
+    <MudText Typo="Typo.h4" Align="Align.Center" GutterBottom>Sign In</MudText>
+    <EditForm Model="Input" method="post" OnValidSubmit="HandleLogin" FormName="login">
+        <DataAnnotationsValidator />
+        <MudGrid Justify="Justify.Center">
+            <MudItem xs="12">
+                <MudTextField T="string"
+                              Label="Email"
+                              Placeholder="name@example.com"
+                              Variant="Variant.Filled"
+                              Adornment="Adornment.Start"
+                              AdornmentIcon="@Icons.Material.Filled.Email"
+                              @bind-Value="Input.Email"
+                              Required="true"
+                              Immediate="true"
+                              AdornmentColor="Color.Primary"
+                              For="() => Input.Email" />
+            </MudItem>
+
+            <MudItem xs="12">
+                <MudTextField T="string"
+                              Label="Password"
+                              Placeholder="••••••••"
+                              Variant="Variant.Filled"
+                              @bind-Value="Input.Password"
+                              Required="true"
+                              Immediate="true"
+                              InputType="@PasswordInputType"
+                              Adornment="Adornment.Start"
+                              AdornmentColor="Color.Primary"
+                              AdornmentIcon="@PasswordInputIcon"
+                              OnAdornmentClick="RevealPassword"
+                              For="() => Input.Password" />
+            </MudItem>
+
+            <MudItem xs="6" sm="6">
+                <MudLink Href="/password/forgot">
+                    <MudText Align="Align.Left">
+                        Forgot password?
+                    </MudText>
+                </MudLink>
+            </MudItem>
+
+            <MudItem xs="6" sm="6">
+                <MudLink Href="/register">
+                    <MudText Align="Align.Right">
+                        You don't have an Account?
+                    </MudText>
+                </MudLink>
+            </MudItem>
+        </MudGrid>
+
+        <MudSpacer />
+
+        <MudLoadingButton ButtonType="ButtonType.Submit"
+                          Variant="Variant.Filled"
+                          Color="Color.Primary"
+                          Class="mt-3"
+                          FullWidth="true"
+                          Disabled="clicked"
+                          @bind-Loading="clicked"
+                          StartIcon="@(clicked ? null : Icons.Material.Filled.Login)">
+            <LoadingContent>
+                Sign In is underway...
+            </LoadingContent>
+            <ChildContent>
+                Sign In
+            </ChildContent>
+        </MudLoadingButton>
+    </EditForm>
+</MudContainer>

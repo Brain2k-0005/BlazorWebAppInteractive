@@ -1,0 +1,16 @@
+﻿@page "/"
+@page "/home"
+@using BlazorWebAppInteractive.Frontend.Snackbar
+@using System.ComponentModel
+@using System.Runtime.CompilerServices
+@using System.Reflection
+@rendermode InteractiveServer
+
+<PageTitle>Home</PageTitle>
+
+<AuthorizeView>
+    <Authorized>
+    </Authorized>
+    <NotAuthorized>
+    </NotAuthorized>
+</AuthorizeView>

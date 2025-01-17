@@ -1,0 +1,210 @@
+﻿@page "/profile/settings"
+@rendermode InteractiveServer
+@inject ProfilePictureService ProfilePictureService
+@inject ITokenService TokenProvider
+@inject IAccountService AccountService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@attribute [Authorize]
+
+<!--HIDE FOR SMALLER SCREENS-->
+<MudHidden Breakpoint="Breakpoint.SmAndDown" Style="padding:0px;margin:0px;">
+    <MudTabs Outlined="true" Position="Position.Left" Rounded="false" Border="false"
+             ApplyEffectsToContainer="true" PanelClass="pl-2" Elevation="0" Style="height:100%;width:100vw;padding:0px;margin:0px;" Centered="false">
+        <AuthorizeView Roles="role1">
+            <MudTabPanel Text="Profile Information">
+                <MudForm @bind-IsValid="@isValid" Model="@profileModel">
+                    <MudGrid Spacing="2" Justify="Justify.FlexStart">
+                        <MudItem xs="6" sm="6">
+                            <MudTextField Immediate="true" T="string" Label="Firstname" @bind-Value="@profileModel.Firstname" Required="true" />
+                        </MudItem>
+                        <MudItem xs="6" sm="6">
+                            <MudTextField Immediate="true" T="string" Label="Last name" @bind-Value="@profileModel.Lastname" Required="true" />
+                        </MudItem>
+                        <MudItem xs="12">
+                            <MudTextField Immediate="true" T="string" Label="Birthdays" InputType="InputType.Date" Required="false" />
+                        </MudItem>
+                        <MudItem xs="12">
+                            <MudTextField Immediate="true" T="string" Label="Email" @bind-Value="@profileModel.Email" Required="true" />
+                        </MudItem>
+                    </MudGrid>
+                </MudForm>
+            </MudTabPanel>
+
+            <MudTabPanel Text="Change Password">
+                <MudForm @bind-IsValid="@passwordValid" Model="@passwordModel">
+                    <MudGrid Spacing="2" Justify="Justify.FlexStart">
+                        <MudItem xs="12">
+                            <MudTextField Immediate="true" T="string" Label="Current Password" InputType="InputType.Password" @bind-Value="@passwordModel.CurrentPassword" Required="true" />
+                        </MudItem>
+                        <MudItem xs="12">
+                            <MudTextField Immediate="true" T="string" Label="New Password" InputType="InputType.Password" @bind-Value="@passwordModel.NewPassword" Required="true" />
+                        </MudItem>
+                        <MudItem xs="12">
+                            <MudTextField Immediate="true" T="string" Label="Confirm Password" InputType="InputType.Password" @bind-Value="@passwordModel.ConfirmPassword" Required="true" />
+                        </MudItem>
+                        <MudItem xs="12">
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="ChangePassword">Update Password</MudButton>
+                        </MudItem>
+                    </MudGrid>
+                </MudForm>
+            </MudTabPanel>
+        </AuthorizeView>
+        <MudTabPanel Text="Notifications & Settings">
+            <MudGrid Spacing="2" Justify="Justify.FlexStart">
+                <MudItem xs="6">
+                    <MudItem xs="12">
+                        <MudCheckBox Color="Color.Surface" Dense="true" T="bool" @bind-value="@profileModel.EmailNotifications" Label="Receive Email Notifications" />
+                    </MudItem>
+                    <MudItem xs="12">
+                        <MudCheckBox Color="Color.Surface" Dense="true" T="bool" @bind-value="@profileModel.SmsNotifications" Label="Receive SMS Notifications" />
+                    </MudItem>
+                    <MudItem xs="12">
+                        <MudCheckBox Color="Color.Surface" Dense="true" T="bool" @bind-value="@profileModel.WebsiteNotifications" Label="Receive Website Notifications" />
+                    </MudItem>
+                    <MudSpacer />
+                    <MudItem xs="12">
+                        <MudSelect AnchorOrigin="Origin.BottomCenter" T="ColorPreset" Label="Theme Color" @bind-Value="@profileModel.ColorPreset" TextChanged="ColorSwitch">
+                            @foreach (var color in Enum.GetValues(typeof(ColorPreset)).Cast<ColorPreset>())
+                            {
+                                <MudSelectItem Value="@color">@color</MudSelectItem>
+                            }
+                        </MudSelect>
+                    </MudItem>
+                </MudItem>
+                <MudItem xs="6" Class="mt-2">
+                    <div class="image-container" @onclick="OpenEditDialog">
+                        <MudImage Src="@profileModel?.ProfilePicturePath?.Replace("wwwroot/","")" Alt="Profile" Class="circular-image" />
+                        <div class="edit-icon">
+                            <MudIcon Icon="@Icons.Material.Filled.Edit" Color="Color.Primary" />
+                        </div>
+                    </div>
+                </MudItem>
+            </MudGrid>
+        </MudTabPanel>
+    </MudTabs>
+</MudHidden>
+
+<!--HIDE FOR BIGGER SCREENS-->
+<MudHidden Breakpoint="Breakpoint.MdAndUp">
+    <MudTabs Outlined="true" Position="Position.Top" Rounded="true" Border="true"
+    ApplyEffectsToContainer="true" PanelClass="pt-2 pl-2 pr-2" Elevation="0" Style="height:94.4vh">
+        <MudTabPanel Text="Profile Information">
+            <MudForm @bind-IsValid="@isValid" Model="@profileModel">
+                <MudGrid Spacing="2" Justify="Justify.FlexStart">
+                    <MudItem xs="6" sm="6">
+                        <MudTextField T="string" Label="Firstname" @bind-Value="@profileModel.Firstname" Required="true" />
+                    </MudItem>
+                    <MudItem xs="6" sm="6">
+                        <MudTextField T="string" Label="Last name" @bind-Value="@profileModel.Lastname" Required="true" />
+                    </MudItem>
+                    <MudItem xs="12">
+                        <MudTextField T="string" Label="Birthdays" InputType="InputType.Date" Required="false" />
+                    </MudItem>
+                    <MudItem xs="12">
+                        <MudTextField T="string" Label="Email" @bind-Value="@profileModel.Email" Required="true" />
+                    </MudItem>
+                    <MudItem xs="12">
+                        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="SaveSettings">Save Changes</MudButton>
+                    </MudItem>
+                </MudGrid>
+            </MudForm>
+        </MudTabPanel>
+
+        <MudTabPanel Text="Change Password">
+            <MudForm @bind-IsValid="@passwordValid" Model="@passwordModel">
+                <MudGrid Spacing="2" Justify="Justify.FlexStart">
+                    <MudItem xs="12">
+                        <MudTextField T="string" Label="Current Password" InputType="InputType.Password" @bind-Value="@passwordModel.CurrentPassword" Required="true" />
+                    </MudItem>
+                    <MudItem xs="12">
+                        <MudTextField T="string" Label="New Password" InputType="InputType.Password" @bind-Value="@passwordModel.NewPassword" Required="true" />
+                    </MudItem>
+                    <MudItem xs="12">
+                        <MudTextField T="string" Label="Confirm Password" InputType="InputType.Password" @bind-Value="@passwordModel.ConfirmPassword" Required="true" />
+                    </MudItem>
+                    <MudItem xs="12">
+                        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="ChangePassword">Update Password</MudButton>
+                    </MudItem>
+                </MudGrid>
+            </MudForm>
+        </MudTabPanel>
+
+        <MudTabPanel Text="Notifications & Settings">
+            <MudGrid Spacing="2" Justify="Justify.FlexStart">
+                <MudItem xs="12">
+                    <MudCheckBox Color="Color.Surface" Dense="true" T="bool" @bind-value="@profileModel.EmailNotifications" Label="Receive Email Notifications" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudCheckBox Color="Color.Surface" Dense="true" T="bool" @bind-value="@profileModel.SmsNotifications" Label="Receive SMS Notifications" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudCheckBox Color="Color.Surface" Dense="true" T="bool" @bind-value="@profileModel.WebsiteNotifications" Label="Receive Website Notifications" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudSelect T="ColorPreset" Label="Theme Color" @bind-Value="@profileModel.ColorPreset">
+                        @foreach (var color in Enum.GetValues(typeof(ColorPreset)).Cast<ColorPreset>())
+                        {
+                            <MudSelectItem Value="@color">@color</MudSelectItem>
+                        }
+                    </MudSelect>
+                </MudItem>
+                <MudItem xs="6">
+                    <MudImage Src="@profileModel?.ProfilePicturePath?.Replace("wwwroot/","" )" Alt="Profile"></MudImage>
+                    <MudFileUpload T="IBrowserFile" Files="browserFile" OnFilesChanged="HandleFileSelected">
+                        <ActivatorContent>
+                            <MudButton Variant="Variant.Filled"
+                            Color="Color.Primary">
+                                Single File
+                            </MudButton>
+                        </ActivatorContent>
+                    </MudFileUpload>
+                </MudItem>
+                <MudItem xs="12">
+                    <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="SaveSettings">Save Changes</MudButton>
+                </MudItem>
+            </MudGrid>
+        </MudTabPanel>
+    </MudTabs>
+</MudHidden>
+
+
+@code {
+    private void OpenEditDialog()
+    {
+        DialogService.Show<ProfileImageChange>(title:"Upload Image");
+    }
+}
+
+<style>
+    .image-container {
+        position: relative;
+        width: 100px; /* Set the desired width */
+        height: 100px; /* Set the desired height */
+        cursor: pointer;
+    }
+
+    .circular-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .edit-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    .image-container:hover .edit-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+</style>

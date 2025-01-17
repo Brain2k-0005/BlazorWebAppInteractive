@@ -1,0 +1,40 @@
+﻿@rendermode InteractiveServer
+
+<MudDialog Style="width:200%;">
+    <DialogContent>
+        <MudGrid Spacing="4">
+            <MudItem xs="6">
+                <MudPaper Elevation="3" Style="height:100%; width:100%;cursor:pointer;" Class="d-flex flex-column align-center justify-center pa-4" @onclick="UploadImage">
+                    <MudIcon Icon="@Icons.Material.Filled.AddAPhoto" Color="Color.Primary" Size="MudBlazor.Size.Large" />
+                    <MudText Typo="Typo.subtitle2" Align="Align.Center" Class="mt-2">Upload Image</MudText>
+                </MudPaper>
+            </MudItem>
+            <MudItem xs="6">
+                <MudPaper Elevation="3" Style="height:100%; width:100%;cursor:pointer;" Class="d-flex flex-column align-center justify-center pa-4" @onclick="SelectGif">
+                    <MudIcon Icon="@Icons.Material.Filled.Gif" Color="Color.Primary" Size="MudBlazor.Size.Large" />
+                    <MudText Typo="Typo.subtitle2" Align="Align.Center" Class="mt-2">Upload GIF</MudText>
+                </MudPaper>
+            </MudItem>
+            <MudItem xs="12">
+                <MudButton Color="Color.Warning" FullWidth="true" Variant="Variant.Outlined">RESET</MudButton>
+            </MudItem>
+            <MudItem xs="12">
+                <MudButton Color="Color.Success" FullWidth="true" Variant="Variant.Filled">SAVE</MudButton>
+            </MudItem>
+        </MudGrid>
+    </DialogContent>
+</MudDialog>
+
+@code {
+    [CascadingParameter] IMudDialogInstance MudDialog { get; set; }
+
+    private void UploadImage()
+    {
+
+    }
+
+    private void SelectGif()
+    {
+
+    }
+}

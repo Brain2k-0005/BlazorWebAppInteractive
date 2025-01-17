@@ -1,0 +1,128 @@
+﻿@page "/register"
+@rendermode InteractiveServer
+
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Authentication.Cookies
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.WebUtilities
+@using MudBlazor.StaticInput
+@using System.Text.Json
+@using System.Security.Claims
+@using System.Text
+@using System.Text.Encodings.Web
+
+@inject IAccountService AccountService
+
+<PageTitle>Sign Up</PageTitle>
+<MudContainer MaxWidth="MaxWidth.Small">
+    <MudText Typo="Typo.h4" Align="Align.Center" GutterBottom>Sign Up</MudText>
+    <EditForm Model="Input" method="post" OnValidSubmit="HandleRegister" FormName="register">
+        <DataAnnotationsValidator />
+
+        <MudGrid Spacing="3">
+            <MudItem xs="6">
+                <MudTextField T="string"
+                              Label="Firstname"
+                              Placeholder="John"
+                              Variant="Variant.Filled"
+                              Adornment="Adornment.Start"
+                              AdornmentIcon="@Icons.Material.Filled.Person"
+                              @bind-Value="Input.Firstname"
+                              Required="true"
+                              Immediate="true"
+                              AdornmentColor="Color.Primary"
+                              MaxLength="100"
+                              For="() => Input.Firstname" />
+            </MudItem>
+
+            <MudItem xs="6">
+                <MudTextField T="string"
+                              Label="Lastname"
+                              Placeholder="Doe"
+                              Variant="Variant.Filled"
+                              Adornment="Adornment.Start"
+                              AdornmentIcon="@Icons.Material.Filled.Person4"
+                              @bind-Value="Input.Lastname"
+                              Required="true"
+                              Immediate="true"
+                              AdornmentColor="Color.Primary"
+                              MaxLength="100"
+                              For="() => Input.Lastname" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField T="string"
+                              Label="Email"
+                              Placeholder="name@example.com"
+                              Variant="Variant.Filled"
+                              Adornment="Adornment.Start"
+                              AdornmentIcon="@Icons.Material.Filled.Email"
+                              @bind-Value="Input.Email"
+                              Required="true"
+                              Immediate="true"
+                              AdornmentColor="Color.Primary"
+                              MaxLength="100"
+                              For="() => Input.Email" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField T="string"
+                              Label="Password"
+                              Placeholder="••••••••"
+                              Variant="Variant.Filled"
+                              @bind-Value="Input.Password"
+                              Required="true"
+                              Immediate="true"
+                              InputType="@PasswordInput01"
+                              Adornment="Adornment.Start"
+                              AdornmentColor="Color.Primary"
+                              AdornmentIcon="@PasswordInputIcon01"
+                              OnAdornmentClick="PW01Vis"
+                              MaxLength="100"
+                              For="() => Input.Password" />
+            </MudItem>
+
+            <MudItem xs="12">
+                <MudTextField T="string"
+                              Label="Confirm Passord"
+                              Placeholder="••••••••"
+                              Variant="Variant.Filled"
+                              @bind-Value="Input.PasswordConfirm"
+                              InputType="@PasswordInput02"
+                              Required="true"
+                              Immediate="true"
+                              Adornment="Adornment.Start"
+                              AdornmentColor="Color.Primary"
+                              AdornmentIcon="@PasswordInputIcon02"
+                              OnAdornmentClick="PW02Vis"
+                              MaxLength="100"
+                              For="() => Input.PasswordConfirm" />
+            </MudItem>
+            <MudItem xs="6" sm="6">
+                <MudLink Href="/login">
+                    <MudText Align="Align.Left">
+                        Already have an account?
+                    </MudText>
+                </MudLink>
+            </MudItem>
+        </MudGrid>
+
+        <MudSpacer />
+
+        <MudLoadingButton ButtonType="ButtonType.Submit"
+                          Variant="Variant.Filled"
+                          Color="Color.Primary"
+                          Class="mt-3"
+                          FullWidth="true"
+                          Disabled="clicked"
+                          @bind-Loading="clicked"
+                          StartIcon="@(clicked ? null : Icons.Material.Filled.AppRegistration)">
+            <LoadingContent>
+                Registration is in progress...
+            </LoadingContent>
+            <ChildContent>
+                Sign Up
+            </ChildContent>
+        </MudLoadingButton>
+    </EditForm>
+</MudContainer>

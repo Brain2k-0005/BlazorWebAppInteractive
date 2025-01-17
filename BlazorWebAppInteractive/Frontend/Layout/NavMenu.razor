@@ -1,0 +1,47 @@
+﻿@implements IDisposable
+
+@inject NavigationManager NavigationManager
+
+<MudNavMenu Dense="true" Bordered="true" Class="mud-height-full d-flex flex-column">
+    <MudNavLink Href="/home" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home" >Home</MudNavLink>
+    <AuthorizeView>
+        <Authorized>
+            <MudNavLink Href="#" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Verified">Auth</MudNavLink>
+        </Authorized>
+    </AuthorizeView>
+
+    <AuthorizeView>
+        <Authorized>
+            <MudSpacer />
+            <MudNavLink Href="/logout" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Password">Logout</MudNavLink>
+        </Authorized>
+        <NotAuthorized>
+            <MudSpacer />
+            <MudNavLink Href="/faq" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.QuestionAnswer">FAQ</MudNavLink>
+            <MudNavLink Href="/register" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Person">Register</MudNavLink>
+            <MudNavLink Href="/login" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Password">Login</MudNavLink>
+        </NotAuthorized>
+    </AuthorizeView>
+</MudNavMenu>
+
+
+@code {
+    private string? currentUrl;
+
+    protected override void OnInitialized()
+    {
+        currentUrl = NavigationManager.ToBaseRelativePath(NavigationManager.Uri);
+        NavigationManager.LocationChanged += OnLocationChanged;
+    }
+
+    private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        currentUrl = NavigationManager.ToBaseRelativePath(e.Location);
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        NavigationManager.LocationChanged -= OnLocationChanged;
+    }
+}
