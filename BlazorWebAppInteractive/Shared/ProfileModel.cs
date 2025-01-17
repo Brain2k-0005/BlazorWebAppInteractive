@@ -34,7 +34,6 @@ namespace BlazorWebAppInteractive.Shared
             get => _email;
             set => SetProperty(ref _email, value);
         }
-
         public bool EmailNotifications
         {
             get => _emailNotifications;

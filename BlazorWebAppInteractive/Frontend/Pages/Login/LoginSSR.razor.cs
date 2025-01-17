@@ -11,6 +11,10 @@ namespace BlazorWebAppInteractive.Frontend.Pages.Login
         [SupplyParameterFromQuery(Name = "token")]
         public string IdentityToken { get; set; }
 
+        [Parameter]
+        [SupplyParameterFromQuery(Name = "rmbrme")]
+        public bool RememberMe { get; set; } = false;
+
         /// <summary>
         /// Lifecycle method that initializes the component.
         /// Attempts to handle the login using the identity token and navigates to the home page.
@@ -57,7 +61,7 @@ namespace BlazorWebAppInteractive.Frontend.Pages.Login
             }
 
             // Step 3: Sign in the user without creating a persistent authentication cookie.
-            await SignInManager.SignInAsync(user, isPersistent: false);
+            await SignInManager.SignInAsync(user, isPersistent: RememberMe);
         }
     }
 

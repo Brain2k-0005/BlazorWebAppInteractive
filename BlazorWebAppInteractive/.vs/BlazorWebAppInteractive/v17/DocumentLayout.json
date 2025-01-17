@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|c:\\users\\mikem\\source\\repos\\brain2k-0005\\blazorwebappinteractive\\blazorwebappinteractive\\frontend\\pages\\profile\\profile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|solutionrelative:frontend\\pages\\profile\\profile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|c:\\users\\mikem\\source\\repos\\brain2k-0005\\blazorwebappinteractive\\blazorwebappinteractive\\blazorwebappinteractive.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|solutionrelative:blazorwebappinteractive.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
@@ -35,12 +39,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BlazorWebAppInteractive",
+              "Title": "Profile.razor",
+              "DocumentMoniker": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Pages\\Profile\\Profile.razor",
+              "RelativeDocumentMoniker": "Frontend\\Pages\\Profile\\Profile.razor",
+              "ToolTip": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Pages\\Profile\\Profile.razor",
+              "RelativeToolTip": "Frontend\\Pages\\Profile\\Profile.razor",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T17:25:22.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BlazorWebAppInteractive.csproj",
               "DocumentMoniker": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj",
               "RelativeDocumentMoniker": "BlazorWebAppInteractive.csproj",
               "ToolTip": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj",
               "RelativeToolTip": "BlazorWebAppInteractive.csproj",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-01-17T17:19:16.335Z",
               "EditorCaption": ""

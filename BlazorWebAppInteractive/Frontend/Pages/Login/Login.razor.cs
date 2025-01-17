@@ -48,7 +48,7 @@ namespace BlazorWebAppInteractive.Frontend.Pages.Login
 
             // Generate a secure token for the user and navigate to the SSR login endpoint.
             var token = await TokenProvider.GenerateSecureToken(user);
-            NavigationManager.NavigateTo($"/login/ssr?token={token}", true);
+            NavigationManager.NavigateTo($"/login/ssr?token={token}&rmbrme={Input.RememberMe}", true);
         }
 
         // State variables for toggling password visibility.

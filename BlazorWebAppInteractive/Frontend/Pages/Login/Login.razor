@@ -40,6 +40,10 @@
                               For="() => Input.Password" />
             </MudItem>
 
+            <MudItem xs="12">
+                <MudCheckBox T="bool" Label="Rember me?" @bind-Value="@Input.RememberMe" />
+            </MudItem>
+
             <MudItem xs="6" sm="6">
                 <MudLink Href="/password/forgot">
                     <MudText Align="Align.Left">
