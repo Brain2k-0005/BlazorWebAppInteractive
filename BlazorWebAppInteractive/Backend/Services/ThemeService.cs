@@ -74,7 +74,7 @@ namespace BlazorWebAppInteractive.Backend.Services
         {
             return preset switch
             {
-                ColorPreset.JUSTMAMI => DefaultTheme.Theme,
+                ColorPreset.Default => DefaultTheme.Theme,
                 ColorPreset.Quartz => QuartzTheme.Theme,
                 ColorPreset.Solar => SolarTheme.Theme,
                 ColorPreset.Slate => SlateTheme.Theme,

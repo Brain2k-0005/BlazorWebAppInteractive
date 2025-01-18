@@ -11,19 +11,13 @@ namespace BlazorWebAppInteractive.Backend.Data.Models
 
         [Required, MaxLength(50)]
         public string Lastname { get; set; }
-
-        public bool EmailNotificationsEnabled { get; set; }
-        public bool SmsNotificationsEnabled { get; set; }
-        public bool WebsiteNotificationsEnabled { get; set; }
         public ColorPreset ColorPreset { get; set; }
-        public string? LoginCode { get; set; }
-        public Guid? FamilyCode { get; set; }
         public string? ProfilePicturePath { get; set; }
     }
 
     public enum ColorPreset
     {
-        JUSTMAMI,
+        Default,
         Solar,
         Slate,
         Quartz,

@@ -78,7 +78,7 @@ LabelColor="@(_DarkMode ? ThemeService.CurrentTheme.PaletteDark.Primary.Value : 
         ProfilePictureService.OnProfileChangedAsync += HandleThemeChange;
 
         // Initialize the default theme
-        ThemeService.InitializeTheme(ColorPreset.JUSTMAMI);
+        ThemeService.InitializeTheme(ColorPreset.Default);
 
         // Get authentication state
         var authState = await stateProvider.GetAuthenticationStateAsync();

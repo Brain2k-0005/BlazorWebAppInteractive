@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|c:\\users\\mikem\\source\\repos\\brain2k-0005\\blazorwebappinteractive\\blazorwebappinteractive\\frontend\\pages\\register.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|solutionrelative:frontend\\pages\\register.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|c:\\users\\mikem\\source\\repos\\brain2k-0005\\blazorwebappinteractive\\blazorwebappinteractive\\frontend\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|solutionrelative:frontend\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|c:\\users\\mikem\\source\\repos\\brain2k-0005\\blazorwebappinteractive\\blazorwebappinteractive\\frontend\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|solutionrelative:frontend\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|c:\\users\\mikem\\source\\repos\\brain2k-0005\\blazorwebappinteractive\\blazorwebappinteractive\\frontend\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|solutionrelative:frontend\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|c:\\users\\mikem\\source\\repos\\brain2k-0005\\blazorwebappinteractive\\blazorwebappinteractive\\frontend\\pages\\login\\loginssr.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|solutionrelative:frontend\\pages\\login\\loginssr.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -59,6 +75,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Register.razor.cs",
+              "DocumentMoniker": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Pages\\Register.razor.cs",
+              "RelativeDocumentMoniker": "Frontend\\Pages\\Register.razor.cs",
+              "ToolTip": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Pages\\Register.razor.cs",
+              "RelativeToolTip": "Frontend\\Pages\\Register.razor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T17:40:14.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Register.razor",
+              "DocumentMoniker": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Pages\\Register.razor",
+              "RelativeDocumentMoniker": "Frontend\\Pages\\Register.razor",
+              "ToolTip": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Pages\\Register.razor",
+              "RelativeToolTip": "Frontend\\Pages\\Register.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T17:40:12.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\App.razor",
+              "RelativeDocumentMoniker": "Frontend\\App.razor",
+              "ToolTip": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\App.razor",
+              "RelativeToolTip": "Frontend\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T17:35:26.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Routes.razor",
+              "RelativeDocumentMoniker": "Frontend\\Routes.razor",
+              "ToolTip": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Routes.razor",
+              "RelativeToolTip": "Frontend\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T17:35:22.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "LoginSSR.razor.cs",
               "DocumentMoniker": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Pages\\Login\\LoginSSR.razor.cs",
               "RelativeDocumentMoniker": "Frontend\\Pages\\Login\\LoginSSR.razor.cs",
@@ -71,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Login.razor.cs",
               "DocumentMoniker": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Pages\\Login\\Login.razor.cs",
               "RelativeDocumentMoniker": "Frontend\\Pages\\Login\\Login.razor.cs",
@@ -84,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "LoginInputModel.cs",
               "DocumentMoniker": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Shared\\LoginInputModel.cs",
               "RelativeDocumentMoniker": "Shared\\LoginInputModel.cs",
@@ -97,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Login.razor",
               "DocumentMoniker": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Pages\\Login\\Login.razor",
               "RelativeDocumentMoniker": "Frontend\\Pages\\Login\\Login.razor",
@@ -110,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "ProfileModel.cs",
               "DocumentMoniker": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Shared\\ProfileModel.cs",
               "RelativeDocumentMoniker": "Shared\\ProfileModel.cs",
@@ -123,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Profile.razor",
               "DocumentMoniker": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Pages\\Profile\\Profile.razor",
               "RelativeDocumentMoniker": "Frontend\\Pages\\Profile\\Profile.razor",
@@ -136,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "BlazorWebAppInteractive.csproj",
               "DocumentMoniker": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj",
               "RelativeDocumentMoniker": "BlazorWebAppInteractive.csproj",
