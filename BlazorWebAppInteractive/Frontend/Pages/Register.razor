@@ -16,11 +16,11 @@
 @inject IAccountService AccountService
 
 <PageTitle>Sign Up</PageTitle>
-<MudContainer MaxWidth="MaxWidth.Small">
-    <MudText Typo="Typo.h4" Align="Align.Center" GutterBottom>Sign Up</MudText>
+<MudContainer MaxWidth="MaxWidth.Small" Style="height: 100%; display: flex; align-items: center; justify-content: center;">
     <EditForm Model="Input" method="post" OnValidSubmit="HandleRegister" FormName="register">
         <DataAnnotationsValidator />
 
+        <MudText Typo="Typo.h4" Align="Align.Center" GutterBottom>Sign Up</MudText>
         <MudGrid Spacing="3">
             <MudItem xs="6">
                 <MudTextField T="string"

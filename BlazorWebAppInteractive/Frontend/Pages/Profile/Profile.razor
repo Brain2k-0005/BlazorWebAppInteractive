@@ -1,6 +1,7 @@
 ﻿@page "/profile/settings"
 @rendermode InteractiveServer
 @inject ProfilePictureService ProfilePictureService
+@inject IHttpContextAccessor HttpContextAccessor
 @inject ITokenService TokenProvider
 @inject IAccountService AccountService
 @inject AuthenticationStateProvider AuthenticationStateProvider
@@ -10,66 +11,22 @@
 <MudHidden Breakpoint="Breakpoint.SmAndDown" Style="padding:0px;margin:0px;">
     <MudTabs Outlined="true" Position="Position.Left" Rounded="false" Border="false"
              ApplyEffectsToContainer="true" PanelClass="pl-2" Elevation="0" Style="height:100%;width:100vw;padding:0px;margin:0px;" Centered="false">
-        <AuthorizeView Roles="role1">
-            <MudTabPanel Text="Profile Information">
-                <MudForm @bind-IsValid="@isValid" Model="@profileModel">
-                    <MudGrid Spacing="2" Justify="Justify.FlexStart">
-                        <MudItem xs="6" sm="6">
-                            <MudTextField Immediate="true" T="string" Label="Firstname" @bind-Value="@profileModel.Firstname" Required="true" />
-                        </MudItem>
-                        <MudItem xs="6" sm="6">
-                            <MudTextField Immediate="true" T="string" Label="Last name" @bind-Value="@profileModel.Lastname" Required="true" />
-                        </MudItem>
-                        <MudItem xs="12">
-                            <MudTextField Immediate="true" T="string" Label="Birthdays" InputType="InputType.Date" Required="false" />
-                        </MudItem>
-                        <MudItem xs="12">
-                            <MudTextField Immediate="true" T="string" Label="Email" @bind-Value="@profileModel.Email" Required="true" />
-                        </MudItem>
-                    </MudGrid>
-                </MudForm>
-            </MudTabPanel>
+        <MudTabPanel Text="Profile Information">
+            @RndrFragProfileInformations
+        </MudTabPanel>
 
-            <MudTabPanel Text="Change Password">
-                <MudForm @bind-IsValid="@passwordValid" Model="@passwordModel">
-                    <MudGrid Spacing="2" Justify="Justify.FlexStart">
-                        <MudItem xs="12">
-                            <MudTextField Immediate="true" T="string" Label="Current Password" InputType="InputType.Password" @bind-Value="@passwordModel.CurrentPassword" Required="true" />
-                        </MudItem>
-                        <MudItem xs="12">
-                            <MudTextField Immediate="true" T="string" Label="New Password" InputType="InputType.Password" @bind-Value="@passwordModel.NewPassword" Required="true" />
-                        </MudItem>
-                        <MudItem xs="12">
-                            <MudTextField Immediate="true" T="string" Label="Confirm Password" InputType="InputType.Password" @bind-Value="@passwordModel.ConfirmPassword" Required="true" />
-                        </MudItem>
-                        <MudItem xs="12">
-                            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="ChangePassword">Update Password</MudButton>
-                        </MudItem>
-                    </MudGrid>
-                </MudForm>
-            </MudTabPanel>
-        </AuthorizeView>
-        <MudTabPanel Text="Notifications & Settings">
+        <MudTabPanel Text="Change Password">
+            @RndrFragChangePassword
+        </MudTabPanel>
+
+        <MudTabPanel Text="Two-factor authentication (2FA)">
             <MudGrid Spacing="2" Justify="Justify.FlexStart">
-                <MudItem xs="6">
-                    <MudItem xs="12">
-                        <MudSelect AnchorOrigin="Origin.BottomCenter" T="ColorPreset" Label="Theme Color" @bind-Value="@profileModel.ColorPreset" TextChanged="ColorSwitch">
-                            @foreach (var color in Enum.GetValues(typeof(ColorPreset)).Cast<ColorPreset>())
-                            {
-                                <MudSelectItem Value="@color">@color</MudSelectItem>
-                            }
-                        </MudSelect>
-                    </MudItem>
-                </MudItem>
-                <MudItem xs="6" Class="mt-2">
-                    <div class="image-container" @onclick="OpenEditDialog">
-                        <MudImage Src="@profileModel?.ProfilePicturePath?.Replace("wwwroot/","")" Alt="Profile" Class="circular-image" />
-                        <div class="edit-icon">
-                            <MudIcon Icon="@Icons.Material.Filled.Edit" Color="Color.Primary" />
-                        </div>
-                    </div>
-                </MudItem>
+                @RndrFrag2FA
             </MudGrid>
+        </MudTabPanel>
+
+        <MudTabPanel Text="Personal data">
+            @RndrFragPersonalData
         </MudTabPanel>
     </MudTabs>
 </MudHidden>
@@ -77,84 +34,100 @@
 <!--HIDE FOR BIGGER SCREENS-->
 <MudHidden Breakpoint="Breakpoint.MdAndUp">
     <MudTabs Outlined="true" Position="Position.Top" Rounded="true" Border="true"
-    ApplyEffectsToContainer="true" PanelClass="pt-2 pl-2 pr-2" Elevation="0" Style="height:94.4vh">
+             ApplyEffectsToContainer="true" PanelClass="pt-2 pl-2 pr-2" Elevation="0" Style="height:100%">
         <MudTabPanel Text="Profile Information">
-            <MudForm @bind-IsValid="@isValid" Model="@profileModel">
-                <MudGrid Spacing="2" Justify="Justify.FlexStart">
-                    <MudItem xs="6" sm="6">
-                        <MudTextField T="string" Label="Firstname" @bind-Value="@profileModel.Firstname" Required="true" />
-                    </MudItem>
-                    <MudItem xs="6" sm="6">
-                        <MudTextField T="string" Label="Last name" @bind-Value="@profileModel.Lastname" Required="true" />
-                    </MudItem>
-                    <MudItem xs="12">
-                        <MudTextField T="string" Label="Birthdays" InputType="InputType.Date" Required="false" />
-                    </MudItem>
-                    <MudItem xs="12">
-                        <MudTextField T="string" Label="Email" @bind-Value="@profileModel.Email" Required="true" />
-                    </MudItem>
-                    <MudItem xs="12">
-                        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="SaveSettings">Save Changes</MudButton>
-                    </MudItem>
-                </MudGrid>
-            </MudForm>
+            @RndrFragProfileInformations
         </MudTabPanel>
 
         <MudTabPanel Text="Change Password">
-            <MudForm @bind-IsValid="@passwordValid" Model="@passwordModel">
-                <MudGrid Spacing="2" Justify="Justify.FlexStart">
-                    <MudItem xs="12">
-                        <MudTextField T="string" Label="Current Password" InputType="InputType.Password" @bind-Value="@passwordModel.CurrentPassword" Required="true" />
-                    </MudItem>
-                    <MudItem xs="12">
-                        <MudTextField T="string" Label="New Password" InputType="InputType.Password" @bind-Value="@passwordModel.NewPassword" Required="true" />
-                    </MudItem>
-                    <MudItem xs="12">
-                        <MudTextField T="string" Label="Confirm Password" InputType="InputType.Password" @bind-Value="@passwordModel.ConfirmPassword" Required="true" />
-                    </MudItem>
-                    <MudItem xs="12">
-                        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="ChangePassword">Update Password</MudButton>
-                    </MudItem>
-                </MudGrid>
-            </MudForm>
+            @RndrFragChangePassword
         </MudTabPanel>
 
-        <MudTabPanel Text="Notifications & Settings">
+        <MudTabPanel Text="Two-factor authentication (2FA)">
             <MudGrid Spacing="2" Justify="Justify.FlexStart">
-                <MudItem xs="12">
-                    <MudSelect T="ColorPreset" Label="Theme Color" @bind-Value="@profileModel.ColorPreset">
-                        @foreach (var color in Enum.GetValues(typeof(ColorPreset)).Cast<ColorPreset>())
-                        {
-                            <MudSelectItem Value="@color">@color</MudSelectItem>
-                        }
-                    </MudSelect>
-                </MudItem>
-                <MudItem xs="6">
-                    <MudImage Src="@profileModel?.ProfilePicturePath?.Replace("wwwroot/","" )" Alt="Profile"></MudImage>
-                    <MudFileUpload T="IBrowserFile" Files="browserFile" OnFilesChanged="HandleFileSelected">
-                        <ActivatorContent>
-                            <MudButton Variant="Variant.Filled"
-                            Color="Color.Primary">
-                                Single File
-                            </MudButton>
-                        </ActivatorContent>
-                    </MudFileUpload>
-                </MudItem>
-                <MudItem xs="12">
-                    <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="SaveSettings">Save Changes</MudButton>
-                </MudItem>
+                @RndrFrag2FA
             </MudGrid>
+        </MudTabPanel>
+
+        <MudTabPanel Text="Personal data">
+            @RndrFragPersonalData
         </MudTabPanel>
     </MudTabs>
 </MudHidden>
 
-
+@* RndrFrags *@
 @code {
-    private void OpenEditDialog()
-    {
-        DialogService.Show<ProfileImageChange>(title:"Upload Image");
-    }
+    private RenderFragment RndrFragProfileInformations =>
+    @<MudForm @bind-IsValid="@isValid" Model="@profileModel">
+        <MudGrid Spacing="2" Justify="Justify.FlexStart">
+            <MudItem xs="6" sm="6">
+                <MudTextField Immediate="true" T="string" Label="Firstname" @bind-Value="@profileModel.Firstname" Required="true" />
+            </MudItem>
+            <MudItem xs="6" sm="6">
+                <MudTextField Immediate="true" T="string" Label="Last name" @bind-Value="@profileModel.Lastname" Required="true" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField Immediate="true" T="string" Label="Birthdays" InputType="InputType.Date" Required="false" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField Immediate="true" T="string" Label="Email" @bind-Value="@profileModel.Email" Disabled="true" ReadOnly="true" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField Immediate="true" T="string" Label="Phone Number" HelperText="Please enter your phone number." @bind-Value="@profileModel.Phonenumber" ReadOnly="true" />
+            </MudItem>
+        </MudGrid>
+    </MudForm>;
+
+    private RenderFragment RndrFragChangePassword =>
+    @<MudForm @bind-IsValid="@passwordValid" Model="@passwordModel">
+        <MudGrid Spacing="2" Justify="Justify.FlexStart">
+            <MudItem xs="12">
+                <MudTextField HelperText="Please enter your current password." Immediate="true" T="string" Label="Current Password" InputType="InputType.Password" @bind-Value="@passwordModel.CurrentPassword" Required="true" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField HelperText="Please enter your new password." Immediate="true" T="string" Label="New Password" InputType="InputType.Password" @bind-Value="@passwordModel.NewPassword" Required="true" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField HelperText="Please confirm you new password." Immediate="true" T="string" Label="Confirm Password" InputType="InputType.Password" @bind-Value="@passwordModel.ConfirmPassword" Required="true" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="ChangePassword">Update Password</MudButton>
+            </MudItem>
+        </MudGrid>
+    </MudForm>;
+
+    private RenderFragment RndrFrag2FA =>
+    @<MudGrid Spacing="2" Justify="Justify.FlexStart">
+
+    </MudGrid>;
+
+    private RenderFragment RndrFragPersonalData =>
+    @<MudGrid Spacing="2" Justify="Justify.FlexStart">
+        <MudItem xs="6">
+            <MudItem Class="mb-2" xs="12">
+                <MudSelect T="string" Label="Download Account Data As" Variant="Variant.Filled" FullWidth="true" @bind-Value="SelectedFileType">
+                    <MudSelectItem Value='"txt"'> Text File(.txt)</MudSelectItem>
+                    <MudSelectItem Value='"json"'> JSON File(.json)</MudSelectItem>
+                </MudSelect>
+            </MudItem>
+            <MudItem Class="mb-10" xs="12">
+                <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true" OnClick="GenerateDownloadLink">
+                    Download Data
+                </MudButton>
+            </MudItem>
+
+            <MudItem Class="mb-5" xs="12">
+                <MudButton Class="mb-3" Variant="Variant.Filled" Color="Color.Error" FullWidth="true" OnClick="ConfirmDeleteAccount">
+                    Delete Account
+                </MudButton>
+                <MudAlert Severity="Severity.Warning" ShowCloseIcon="false" Icon="@Icons.Material.Filled.Warning" Variant="Variant.Outlined">
+                    Warning: Deleting your account will permanently remove all your account data, including all related information. This action is irreversible.
+                </MudAlert>
+            </MudItem>
+        </MudItem>
+    </MudGrid>;
 }
+
 
 <style>
     .image-container {
@@ -188,4 +161,7 @@
         align-items: center;
     }
 
+    .mud-tab {
+        justify-content: left;
+    }
 </style>

@@ -76,5 +76,17 @@ namespace BlazorWebAppInteractive.Frontend.Pages.Login
                 PasswordInputType = InputType.Text;
             }
         }
+
+
+        protected override async Task OnInitializedAsync()
+        {
+            var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+            var user = authState.User;
+
+            if (user.Identity != null && user.Identity.IsAuthenticated)
+            {
+                NavigationManager.NavigateTo("/home", true);
+            }
+        }
     }
 }

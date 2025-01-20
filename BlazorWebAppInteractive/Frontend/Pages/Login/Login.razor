@@ -2,13 +2,14 @@
 @inject ITokenService TokenProvider
 @inject IAccountService AccountService
 @inject IHttpContextAccessor HttpContext
+@inject AuthenticationStateProvider AuthenticationStateProvider
 @rendermode InteractiveServer
 
 <PageTitle>Sign in</PageTitle>
-<MudContainer MaxWidth="MaxWidth.Small">
-    <MudText Typo="Typo.h4" Align="Align.Center" GutterBottom>Sign In</MudText>
+<MudContainer MaxWidth="MaxWidth.Small" Style="height: 100%; display: flex; align-items: center; justify-content: center;">
     <EditForm Model="Input" method="post" OnValidSubmit="HandleLogin" FormName="login">
         <DataAnnotationsValidator />
+        <MudText Typo="Typo.h4" Align="Align.Center" GutterBottom>Sign In</MudText>
         <MudGrid Justify="Justify.Center">
             <MudItem xs="12">
                 <MudTextField T="string"
@@ -41,14 +42,22 @@
             </MudItem>
 
             <MudItem xs="12">
-                <MudCheckBox T="bool" Label="Rember me?" @bind-Value="@Input.RememberMe" />
+                <MudCheckBox Dense="true" T="bool" Label="Rember me?" @bind-Value="@Input.RememberMe" />
             </MudItem>
+
             <MudItem xs="6" sm="6">
-                <MudLink Href="/password/forgot">
-                    <MudText Align="Align.Left">
-                        Forgot password?
-                    </MudText>
-                </MudLink>
+                <MudStack>
+                    <MudLink Href="/password/forgot">
+                        <MudText Align="Align.Left">
+                            Forgot password?
+                        </MudText>
+                    </MudLink>
+                    <MudLink Href="/confirm">
+                        <MudText Align="Align.Left">
+                            Send confirm email
+                        </MudText>
+                    </MudLink>
+                </MudStack>
             </MudItem>
 
             <MudItem xs="6" sm="6">

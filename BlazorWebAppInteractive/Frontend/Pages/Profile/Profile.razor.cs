@@ -1,11 +1,18 @@
 ﻿using BlazorWebAppInteractive.Backend.Data.Models;
+using BlazorWebAppInteractive.Frontend.Dialogs;
 using BlazorWebAppInteractive.Frontend.Snackbar;
 using BlazorWebAppInteractive.Shared;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
+using Microsoft.AspNetCore.Identity.Data;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.JSInterop;
 using MudBlazor;
 using SixLabors.ImageSharp;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.Text;
+using System.Text.Json;
 
 namespace BlazorWebAppInteractive.Frontend.Pages.Profile
 {
@@ -31,6 +38,7 @@ namespace BlazorWebAppInteractive.Frontend.Pages.Profile
                     {
                         Firstname = _user.Firstname,
                         Lastname = _user.Lastname,
+                        Phonenumber = _user.PhoneNumber,
                         Email = _user.Email,
                         ColorPreset = _user.ColorPreset,
                         ProfilePicturePath = _user.ProfilePicturePath ?? ProfilePictureService.CurrentProfilepicture,
@@ -184,10 +192,122 @@ namespace BlazorWebAppInteractive.Frontend.Pages.Profile
             {
                 Firstname = source.Firstname,
                 Lastname = source.Lastname,
+                Phonenumber = source.Phonenumber,
                 Email = source.Email,
                 ColorPreset = source.ColorPreset,
                 ProfilePicturePath = source.ProfilePicturePath,
             };
+        }
+
+        private async Task ConfirmDeleteAccount()
+        {
+            var confirmed = await DialogService.ShowMessageBox(
+                title: "Confirm Deletion",
+                message: "Are you sure you want to delete your account? This action cannot be undone.",
+                yesText: "Delete",
+                cancelText: "Cancel"
+            );
+
+            if (confirmed == null)
+            {
+                Snackbar.Add("Action cancelled", Severity.Info);
+                return;
+            }
+
+            if (confirmed == false)
+            {
+                Snackbar.Add("Account deletion cancelled", Severity.Info);
+                return;
+            }
+
+            if (confirmed == true)
+            {
+                var result = await AccountService.DeleteAccount(_user);
+
+                if (result.Succeeded)
+                {
+                    Snackbar.Add("Account deleted successfully", Severity.Success);
+                    await Task.Delay(2000).ContinueWith(_ =>
+                    {
+                        NavigationManager.NavigateTo("/logout");
+                    });
+                }
+                else
+                {
+                    result.Errors.ToList().ForEach(x =>
+                    {
+                        Snackbar.Add(x.Description, Severity.Error);
+                    });
+
+                }
+            }
+        }
+
+        private void OpenEditDialog()
+        {
+            DialogService.Show<ProfileImageChange>(title: "Upload Image");
+        }
+
+        private string SelectedFileType = "json";
+        private string? DownloadLink;
+
+        private async Task GenerateDownloadLink()
+        {
+            // Serialize user data to JSON
+            string dataJson = JsonSerializer.Serialize(new
+            {
+                Id = _user.Id,
+                Username = _user.UserName,
+                Firstname = _user.Firstname,
+                Lastname = _user.Lastname,
+                Email = _user.Email,
+                EmailConfirmed = _user.EmailConfirmed,
+                Phonenumber = _user.PhoneNumber,
+                PhoneNumberConfirmed = _user.PhoneNumberConfirmed,
+                TwoFactorEnabled = _user.TwoFactorEnabled,
+            },
+            new JsonSerializerOptions { WriteIndented = true });
+
+            // Prepare file content and metadata
+            string fileContent;
+            string fileExtension;
+
+            if (SelectedFileType == "txt")
+            {
+                fileContent = dataJson.Replace("{", "").Replace("}", "").Replace(",", Environment.NewLine);
+                fileExtension = "txt";
+            }
+            else if (SelectedFileType == "json")
+            {
+                fileContent = dataJson;
+                fileExtension = "json";
+            }
+            else
+            {
+                throw new InvalidOperationException("Unsupported file type.");
+            }
+
+            string fileName = $"AccountData_{_user.UserName}_{DateTime.UtcNow:yyyyMMddHHmmss}.{fileExtension}";
+            var tempFilePath = Path.Combine("wwwroot/personal_data", fileName);
+
+            // Ensure the directory exists
+            Directory.CreateDirectory(Path.GetDirectoryName(tempFilePath));
+
+            // Save the file
+            await File.WriteAllBytesAsync(tempFilePath, Encoding.UTF8.GetBytes(fileContent));
+
+            // Generate a download link
+            DownloadLink = $"/personal_data/{fileName}";
+
+            DialogService.Show<DownloadDialog>(title: "Download Account Data", parameters: new DialogParameters
+            {
+                { "DownloadLink", DownloadLink },
+                { "FileName", fileName }
+            }, new DialogOptions
+            {
+                BackdropClick = false,
+                NoHeader = true,
+            });
         }
     }
 }

@@ -12,93 +12,97 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BlazorWebAppInteractive
 build_property.RootNamespace = BlazorWebAppInteractive
-build_property.ProjectDir = C:\Users\mikem\source\repos\Brain2k-0005\BlazorWebAppInteractive\BlazorWebAppInteractive\
+build_property.ProjectDir = C:\Users\bemi\source\repos\Brain2k-0005\BlazorWebAppInteractive\BlazorWebAppInteractive\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\mikem\source\repos\Brain2k-0005\BlazorWebAppInteractive\BlazorWebAppInteractive
+build_property.MSBuildProjectDirectory = C:\Users\bemi\source\repos\Brain2k-0005\BlazorWebAppInteractive\BlazorWebAppInteractive
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/App.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/App.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcQXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Dialogs/ProfileImageChange.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Dialogs/DownloadDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcRGlhbG9nc1xEb3dubG9hZERpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Dialogs/ProfileImageChange.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcRGlhbG9nc1xQcm9maWxlSW1hZ2VDaGFuZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Layout/MainLayout.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcTGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Layout/NavMenu.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcTGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/FAQ.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/FAQ.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcRkFRLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Home.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Login/ConfirmPage.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Login/ConfirmPage.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcTG9naW5cQ29uZmlybVBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Login/ForgotPassword.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Login/ForgotPassword.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcTG9naW5cRm9yZ290UGFzc3dvcmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Login/Login.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Login/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcTG9naW5cTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Login/LoginSSR.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Login/LoginSSR.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcTG9naW5cTG9naW5TU1IucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Login/ResetPassword.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Login/ResetPassword.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcTG9naW5cUmVzZXRQYXNzd29yZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Logout/Logout.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Logout/Logout.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcTG9nb3V0XExvZ291dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Logout/LogoutSSR.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Logout/LogoutSSR.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcTG9nb3V0XExvZ291dFNTUi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Profile/Profile.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Profile/Profile.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcUHJvZmlsZVxQcm9maWxlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Profile/ProfileSSR.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Profile/ProfileSSR.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcUHJvZmlsZVxQcm9maWxlU1NSLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Register.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Pages/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUGFnZXNcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/PopOver/NotificationPopOver.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/PopOver/NotificationPopOver.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUG9wT3ZlclxOb3RpZmljYXRpb25Qb3BPdmVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Routes.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcUm91dGVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Snackbar/SaveProfile.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/Snackbar/SaveProfile.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcU25hY2tiYXJcU2F2ZVByb2ZpbGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mikem/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/_Imports.razor]
+[C:/Users/bemi/source/repos/Brain2k-0005/BlazorWebAppInteractive/BlazorWebAppInteractive/Frontend/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcX0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

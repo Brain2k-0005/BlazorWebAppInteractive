@@ -1,81 +1,76 @@
 ﻿@page "/confirm"
 @inject ITokenService TokenService
 @inject IAccountService AccountService
+@inject AuthenticationStateProvider AuthenticationStateProvider
 
-<div class="d-flex flex-column align-center justify-center" style="padding-top: 30vh;">
-    <MudGrid Justify="Justify.Center" AlignItems="AlignItems.Center">
-        @if (isValid)
-        {
-            <MudItem xs="12" sm="8" md="6" lg="4">
-                <MudCard Style="text-align: center;" Elevation="4">
-                    <MudCardContent>
-                        <MudText Typo="Typo.h5" Class="mb-2" Align="Align.Center">Confirm Your Email</MudText>
-                        <MudText Typo="Typo.body1" Class="mb-4" Align="Align.Center" Color="Color.Secondary">
-                            Please click the button below to confirm your email address. You have 72 hours to complete this step, or your account will be deleted.
-                        </MudText>
-                        <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true" Style="padding: 0.75rem;" OnClick="PressConfirm">
-                            Confirm Email
-                        </MudButton>
-                    </MudCardContent>
-                </MudCard>
-            </MudItem>
-        }
-        else
-        {
-            <MudContainer MaxWidth="MaxWidth.Small">
-                <EditForm Model="Input" method="post" OnValidSubmit="HandleVerification" FormName="verification">
-                    <DataAnnotationsValidator />
-                    <MudGrid Justify="Justify.Center">
-                        <MudItem xs="12">
-                            <MudTextField T="string"
-                                          Label="Email"
-                                          Placeholder="name@example.com"
-                                          Variant="Variant.Filled"
-                                          Adornment="Adornment.Start"
-                                          AdornmentIcon="@Icons.Material.Filled.Email"
-                                          @bind-Value="Input.Email"
-                                          Required="true"
-                                          Immediate="true"
-                                          AdornmentColor="Color.Primary"
-                                          For="() => Input.Email" />
-                        </MudItem>
+<MudContainer MaxWidth="MaxWidth.Small" Style="height: 100%; display: flex; align-items: center; justify-content: center;">
+    @if (isValid)
+    {
+        <MudItem xs="12">
+            <MudText Typo="Typo.h4" Class="mb-3" Align="Align.Center" Color="Color.Primary">
+                Confirm Your Email
+            </MudText>
+            <MudAlert Class="mb-4" Icon="@Icons.Material.Filled.Warning" ShowCloseIcon="false" Severity="Severity.Warning">
+                Please click the button below to confirm your email address. You have 72 hours to complete this step, or your account will be deleted.
+            </MudAlert>
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true" Style="padding: 0.75rem; margin-bottom: 1rem;" OnClick="PressConfirm">
+                Confirm Email
+            </MudButton>
+        </MudItem>
+    }
+    else
+    {
+        <EditForm Model="Input" method="post" OnValidSubmit="HandleVerification" FormName="verification">
+            <DataAnnotationsValidator />
+            <MudGrid Justify="Justify.Center" Spacing="2">
+                <MudItem xs="12">
+                    <MudTextField T="string"
+                                  Label="Email"
+                                  Placeholder="name@example.com"
+                                  Variant="Variant.Filled"
+                                  Adornment="Adornment.Start"
+                                  AdornmentIcon="@Icons.Material.Filled.Email"
+                                  @bind-Value="Input.Email"
+                                  Required="true"
+                                  Immediate="true"
+                                  AdornmentColor="Color.Primary"
+                                  For="() => Input.Email" />
+                </MudItem>
 
-                        <MudItem xs="12">
-                            <MudTextField T="string"
-                                          Label="Password"
-                                          Placeholder="••••••••"
-                                          Variant="Variant.Filled"
-                                          @bind-Value="Input.Password"
-                                          Required="true"
-                                          Immediate="true"
-                                          InputType="@PasswordInputType"
-                                          Adornment="Adornment.Start"
-                                          AdornmentColor="Color.Primary"
-                                          AdornmentIcon="@PasswordInputIcon"
-                                          OnAdornmentClick="RevealPassword"
-                                          For="() => Input.Password" />
-                        </MudItem>
-                    </MudGrid>
+                <MudItem xs="12">
+                    <MudTextField T="string"
+                                  Label="Password"
+                                  Placeholder="••••••••"
+                                  Variant="Variant.Filled"
+                                  @bind-Value="Input.Password"
+                                  Required="true"
+                                  Immediate="true"
+                                  InputType="@PasswordInputType"
+                                  Adornment="Adornment.Start"
+                                  AdornmentColor="Color.Primary"
+                                  AdornmentIcon="@PasswordInputIcon"
+                                  OnAdornmentClick="RevealPassword"
+                                  For="() => Input.Password" />
+                </MudItem>
+            </MudGrid>
 
-                    <MudSpacer />
+            <MudSpacer />
 
-                    <MudLoadingButton ButtonType="ButtonType.Submit"
-                                      Variant="Variant.Filled"
-                                      Color="Color.Primary"
-                                      Class="mt-3"
-                                      FullWidth="true"
-                                      Disabled="clicked"
-                                      @bind-Loading="clicked"
-                                      StartIcon="@(clicked ? null : Icons.Material.Filled.Send)">
-                        <LoadingContent>
-                            Sending...
-                        </LoadingContent>
-                        <ChildContent>
-                            Send conformation email
-                        </ChildContent>
-                    </MudLoadingButton>
-                </EditForm>
-            </MudContainer>
-        }
-    </MudGrid>
-</div>
+            <MudLoadingButton ButtonType="ButtonType.Submit"
+                              Variant="Variant.Filled"
+                              Color="Color.Primary"
+                              Class="mt-3"
+                              FullWidth="true"
+                              Disabled="clicked"
+                              @bind-Loading="clicked"
+                              StartIcon="@(clicked ? null : Icons.Material.Filled.Send)">
+                <LoadingContent>
+                    Sending...
+                </LoadingContent>
+                <ChildContent>
+                    Send Confirmation Email
+                </ChildContent>
+            </MudLoadingButton>
+        </EditForm>
+    }
+</MudContainer>

@@ -188,8 +188,8 @@ namespace BlazorWebAppInteractive.Backend.Services
         private async Task<IdentityResult> Sender(ApplicationUser user, string subject, string message, string link = "")
         {
             MailMessage mail = new MailMessage();
-            SmtpClient SmtpServer = new SmtpClient("SmtpServer");
-            mail.From = new MailAddress("BlazorWebAppInteractive@BlazorWebAppInteractive.com");
+            SmtpClient SmtpServer = new SmtpClient("provider@mail.com");
+            mail.From = new MailAddress("provider@mail.com");
             mail.To.Add(user.Email ?? "idk");
             mail.Subject = subject;
             mail.Body = message + link;

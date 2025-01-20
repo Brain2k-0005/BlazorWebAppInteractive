@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj": {}
+    "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj": {
+    "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj",
+        "projectUniqueName": "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj",
         "projectName": "BlazorWebAppInteractive",
-        "projectPath": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj",
-        "packagesPath": "C:\\Users\\mikem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\obj\\",
+        "projectPath": "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\BlazorWebAppInteractive.csproj",
+        "packagesPath": "C:\\Users\\bemi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mikem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bemi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -129,7 +129,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

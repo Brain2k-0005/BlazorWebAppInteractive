@@ -1,6 +1,7 @@
 ﻿using BlazorWebAppInteractive.Backend.Data.Models;
 using BlazorWebAppInteractive.Shared;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.WebUtilities;
 using MudBlazor;
 using System.Text;
@@ -19,6 +20,17 @@ namespace BlazorWebAppInteractive.Frontend.Pages.Login
 
         private bool isValid = false;
         private ApplicationUser? User { get; set; }
+
+        protected override async Task OnInitializedAsync()
+        {
+            var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+            var user = authState.User;
+
+            if (user.Identity != null && user.Identity.IsAuthenticated)
+            {
+                NavigationManager.NavigateTo("/profile/settings", true);
+            }
+        }
 
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {
@@ -58,10 +70,10 @@ namespace BlazorWebAppInteractive.Frontend.Pages.Login
                 }
 
                 Snackbar.Add("Your Account is confirmed", Severity.Success);
+
+                await Task.Delay(2000).ContinueWith(t => NavigationManager.NavigateTo("/login"));
             }
         }
-
-
 
 
         //Login verfy

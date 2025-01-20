@@ -30,6 +30,8 @@ namespace BlazorWebAppInteractive.Frontend.Pages
             if (result.Succeeded)
             {
                 Snackbar.Add("Account successfully created.\r\nPlease confirm your email.", Severity.Success);
+
+               await Task.Delay(2000).ContinueWith(t => NavigationManager.NavigateTo("/login"));
             }
             else
             {

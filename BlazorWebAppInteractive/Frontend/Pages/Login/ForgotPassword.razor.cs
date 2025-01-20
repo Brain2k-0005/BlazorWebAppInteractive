@@ -45,5 +45,16 @@ namespace BlazorWebAppInteractive.Frontend.Pages.Login
 
             isSend = false; // Reset the flag to false to indicate processing is complete.
         }
+
+        protected override async Task OnInitializedAsync()
+        {
+            var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+            var user = authState.User;
+
+            if (user.Identity != null && user.Identity.IsAuthenticated)
+            {
+                NavigationManager.NavigateTo("/profile/settings", true);
+            }
+        }
     }
 }

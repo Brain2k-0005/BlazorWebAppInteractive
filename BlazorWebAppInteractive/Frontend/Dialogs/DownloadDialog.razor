@@ -1,0 +1,73 @@
+﻿<MudDialog>
+    <DialogContent>
+        <MudGrid Spacing="2" Justify="Justify.Center">
+            <MudItem xs="1">
+                <MudIcon Icon="@Icons.Material.Filled.CloudDownload" />
+            </MudItem>
+            <MudItem xs="11">
+                <MudText>
+                    @Title
+                </MudText>
+            </MudItem>
+
+            <MudItem xs="12">
+                <MudText>
+                    Your file is ready for download.
+                </MudText>
+            </MudItem>
+
+            <MudItem xs="12">
+                <MudAlert Variant="Variant.Outlined" Severity="Severity.Success" ShowCloseIcon="false" Icon="@Icons.Material.Filled.FileDownload">
+                    <MudTooltip Visible="isFileDeleted" Text="@(isFileDeleted ? "The document no longer exists." : "Click on the text to download the document.")">
+                        <MudLink Disabled="isFileDeleted" OnClick="DeleteFile" Underline="Underline.None" Href="@DownloadLink" Target="_blank" Download="@FileName" Color="Color.Primary">
+                            <MudText Color="Color.Success">
+                                Click here to download
+                            </MudText>
+                        </MudLink>
+                    </MudTooltip>
+                </MudAlert>
+            </MudItem>
+        </MudGrid>
+
+    </DialogContent>
+    <DialogActions>
+        <MudTooltip ShowOnClick="!isFileDeleted" ShowOnFocus="!isFileDeleted" ShowOnHover="!isFileDeleted" Arrow="true" Visible="!isFileDeleted" Text="The window is closed after 5 seconds because the document will be deleted.">
+            <MudButton OnClick="Close" Color="Color.Secondary" Variant="Variant.Text">Close</MudButton>
+        </MudTooltip>
+    </DialogActions>
+</MudDialog>
+
+@code {
+    [CascadingParameter] IMudDialogInstance MudDialog { get; set; }
+
+    [Parameter]
+    public string? DownloadLink { get; set; }
+
+    [Parameter]
+    public string? FileName { get; set; }
+
+    [Parameter]
+    public string? Title { get; set; } = "Download Account Data";
+
+    private bool isFileDeleted = false;
+
+    private async Task Close()
+    {
+        if(!isFileDeleted)
+        {
+            await Task.Delay(5000);
+            File.Delete($"wwwroot/{DownloadLink}");
+            isFileDeleted = true;
+        }
+
+        MudDialog.Close(DialogResult.Ok(true));
+    }
+
+    private async Task DeleteFile()
+    {
+        await Task.Delay(5000);
+        File.Delete($"wwwroot/{DownloadLink}");
+        isFileDeleted = true;
+        StateHasChanged();
+    }
+}

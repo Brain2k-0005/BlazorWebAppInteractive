@@ -93,6 +93,31 @@ namespace BlazorWebAppInteractive.Backend.Services
             }
         }
 
+        public async Task<IdentityResult> DeleteAccount(ApplicationUser user)
+        {
+            if (user == null)
+            {
+                return IdentityResult.Failed(new IdentityError
+                {
+                    Code = "####",
+                    Description = "User not found"
+                });
+            }
+
+            var result = await _userManager.DeleteAsync(user);
+
+            if (!result.Succeeded)
+            {
+                return IdentityResult.Failed(new IdentityError
+                {
+                    Code = "####",
+                    Description = "Could not delete user"
+                });
+            }
+
+            return IdentityResult.Success;
+        }
+
         public async Task<IdentityResult> Confirm(ApplicationUser user, string token)
         {
             return await _userManager.ConfirmEmailAsync(user, token);

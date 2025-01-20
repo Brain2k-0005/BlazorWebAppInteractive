@@ -10,6 +10,7 @@ namespace BlazorWebAppInteractive.Shared
         private string _firstname;
         private string _lastname;
         private string _email;
+        private string _phonenumber;
         private bool _darkMode = false;
         private string? _profilePicturePath;
         private ColorPreset _colorPreset = ColorPreset.Solar;
@@ -48,6 +49,12 @@ namespace BlazorWebAppInteractive.Shared
         {
             get => _colorPreset;
             set => SetProperty(ref _colorPreset, value);
+        }
+
+        public string Phonenumber
+        {
+            get => _phonenumber;
+            set => SetProperty(ref _phonenumber, value);
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;

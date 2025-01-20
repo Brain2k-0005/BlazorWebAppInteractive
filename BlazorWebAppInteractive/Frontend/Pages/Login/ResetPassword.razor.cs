@@ -61,6 +61,17 @@ namespace BlazorWebAppInteractive.Frontend.Pages.Login
             }
         }
 
+        protected override async Task OnInitializedAsync()
+        {
+            var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+            var user = authState.User;
+
+            if (user.Identity != null && user.Identity.IsAuthenticated)
+            {
+                NavigationManager.NavigateTo("/profile/settings", true);
+            }
+        }
+
         /// <summary>
         /// Lifecycle method triggered after the component has rendered.
         /// Validates the identity token and retrieves the associated user's email on the first render.

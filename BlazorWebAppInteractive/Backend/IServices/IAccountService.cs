@@ -69,5 +69,19 @@ namespace BlazorWebAppInteractive.Backend.IServices
         /// <param name="loginInputModel">The input model containing login details.</param>
         /// <returns>An <see cref="IdentityResult"/> indicating the outcome of the validation.</returns>
         public Task<IdentityResult> ValidateLogin(LoginInputModel loginInputModel);
+
+        /// <summary>
+        /// Deletes the specified user account from the system.
+        /// </summary>
+        /// <param name="user">The <see cref="ApplicationUser"/> object representing the user to be deleted.</param>
+        /// <returns>
+        /// A <see cref="Task"/> that represents the asynchronous operation. 
+        /// The task result contains an <see cref="IdentityResult"/> indicating whether the deletion was successful.
+        /// </returns>
+        /// <remarks>
+        /// Use this method to remove a user account permanently. Ensure that proper authorization checks are
+        /// performed before calling this method to prevent unauthorized deletions.
+        /// </remarks>
+        public Task<IdentityResult> DeleteAccount(ApplicationUser user);
     }
 }
