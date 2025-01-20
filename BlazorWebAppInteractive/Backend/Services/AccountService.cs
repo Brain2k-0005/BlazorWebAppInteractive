@@ -44,9 +44,6 @@ namespace BlazorWebAppInteractive.Backend.Services
                 // Set the email address for the user.
                 await _emailStore.SetEmailAsync(user, registerModel.Email, CancellationToken.None);
 
-                // Generate a unique FamilyCode for the user.
-                user.FamilyCode = Guid.NewGuid();
-
                 // Assign first name and last name to the user.
                 user.Firstname = registerModel.Firstname;
                 user.Lastname = registerModel.Lastname;
@@ -183,15 +180,6 @@ namespace BlazorWebAppInteractive.Backend.Services
                 // Update the user's email address.
                 applicationUser.Email = profileModel.Email;
 
-                // Update the user's preference for receiving email notifications.
-                applicationUser.EmailNotificationsEnabled = profileModel.EmailNotifications;
-
-                // Update the user's preference for receiving SMS notifications.
-                applicationUser.SmsNotificationsEnabled = profileModel.SmsNotifications;
-
-                // Update the user's preference for receiving website notifications.
-                applicationUser.WebsiteNotificationsEnabled = profileModel.WebsiteNotifications;
-
                 // Update the user's selected color preset.
                 applicationUser.ColorPreset = profileModel.ColorPreset;
 
@@ -247,11 +235,6 @@ namespace BlazorWebAppInteractive.Backend.Services
         public async Task<ApplicationUser?> GetUserByClaim(ClaimsPrincipal principal)
         {
             return await _userManager.GetUserAsync(principal);
-        }
-
-        public async Task<ApplicationUser?> GetUserByCode(string LoginCode)
-        {
-            return await _userManager.Users.FirstOrDefaultAsync(u => u.LoginCode == LoginCode);
         }
 
         public async Task<ApplicationUser?> GetUserByEmail(string email)

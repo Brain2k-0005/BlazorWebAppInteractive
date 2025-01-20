@@ -57,13 +57,6 @@ namespace BlazorWebAppInteractive.Backend.IServices
         public Task<ApplicationUser?> GetUserByClaim(ClaimsPrincipal principal);
 
         /// <summary>
-        /// Retrieves a user based on their login code.
-        /// </summary>
-        /// <param name="LoginCode">The login code associated with the user.</param>
-        /// <returns>The <see cref="ApplicationUser"/> object, or null if the user is not found.</returns>
-        public Task<ApplicationUser?> GetUserByCode(string LoginCode);
-
-        /// <summary>
         /// Retrieves a user by their email address.
         /// </summary>
         /// <param name="email">The email address of the user.</param>

@@ -10,9 +10,6 @@ namespace BlazorWebAppInteractive.Shared
         private string _firstname;
         private string _lastname;
         private string _email;
-        private bool _emailNotifications = true;
-        private bool _smsNotifications = false;
-        private bool _websiteNotifications = false;
         private bool _darkMode = false;
         private string? _profilePicturePath;
         private ColorPreset _colorPreset = ColorPreset.Solar;
@@ -33,23 +30,6 @@ namespace BlazorWebAppInteractive.Shared
         {
             get => _email;
             set => SetProperty(ref _email, value);
-        }
-        public bool EmailNotifications
-        {
-            get => _emailNotifications;
-            set => SetProperty(ref _emailNotifications, value);
-        }
-
-        public bool SmsNotifications
-        {
-            get => _smsNotifications;
-            set => SetProperty(ref _smsNotifications, value);
-        }
-
-        public bool WebsiteNotifications
-        {
-            get => _websiteNotifications;
-            set => SetProperty(ref _websiteNotifications, value);
         }
 
         public bool DarkMode

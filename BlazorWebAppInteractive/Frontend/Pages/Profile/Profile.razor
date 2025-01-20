@@ -53,16 +53,6 @@
             <MudGrid Spacing="2" Justify="Justify.FlexStart">
                 <MudItem xs="6">
                     <MudItem xs="12">
-                        <MudCheckBox Color="Color.Surface" Dense="true" T="bool" @bind-value="@profileModel.EmailNotifications" Label="Receive Email Notifications" />
-                    </MudItem>
-                    <MudItem xs="12">
-                        <MudCheckBox Color="Color.Surface" Dense="true" T="bool" @bind-value="@profileModel.SmsNotifications" Label="Receive SMS Notifications" />
-                    </MudItem>
-                    <MudItem xs="12">
-                        <MudCheckBox Color="Color.Surface" Dense="true" T="bool" @bind-value="@profileModel.WebsiteNotifications" Label="Receive Website Notifications" />
-                    </MudItem>
-                    <MudSpacer />
-                    <MudItem xs="12">
                         <MudSelect AnchorOrigin="Origin.BottomCenter" T="ColorPreset" Label="Theme Color" @bind-Value="@profileModel.ColorPreset" TextChanged="ColorSwitch">
                             @foreach (var color in Enum.GetValues(typeof(ColorPreset)).Cast<ColorPreset>())
                             {
@@ -131,15 +121,6 @@
 
         <MudTabPanel Text="Notifications & Settings">
             <MudGrid Spacing="2" Justify="Justify.FlexStart">
-                <MudItem xs="12">
-                    <MudCheckBox Color="Color.Surface" Dense="true" T="bool" @bind-value="@profileModel.EmailNotifications" Label="Receive Email Notifications" />
-                </MudItem>
-                <MudItem xs="12">
-                    <MudCheckBox Color="Color.Surface" Dense="true" T="bool" @bind-value="@profileModel.SmsNotifications" Label="Receive SMS Notifications" />
-                </MudItem>
-                <MudItem xs="12">
-                    <MudCheckBox Color="Color.Surface" Dense="true" T="bool" @bind-value="@profileModel.WebsiteNotifications" Label="Receive Website Notifications" />
-                </MudItem>
                 <MudItem xs="12">
                     <MudSelect T="ColorPreset" Label="Theme Color" @bind-Value="@profileModel.ColorPreset">
                         @foreach (var color in Enum.GetValues(typeof(ColorPreset)).Cast<ColorPreset>())

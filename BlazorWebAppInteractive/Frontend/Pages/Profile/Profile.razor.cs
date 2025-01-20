@@ -32,9 +32,6 @@ namespace BlazorWebAppInteractive.Frontend.Pages.Profile
                         Firstname = _user.Firstname,
                         Lastname = _user.Lastname,
                         Email = _user.Email,
-                        EmailNotifications = _user.EmailNotificationsEnabled,
-                        SmsNotifications = _user.SmsNotificationsEnabled,
-                        WebsiteNotifications = _user.WebsiteNotificationsEnabled,
                         ColorPreset = _user.ColorPreset,
                         ProfilePicturePath = _user.ProfilePicturePath ?? ProfilePictureService.CurrentProfilepicture,
                     };
@@ -188,9 +185,6 @@ namespace BlazorWebAppInteractive.Frontend.Pages.Profile
                 Firstname = source.Firstname,
                 Lastname = source.Lastname,
                 Email = source.Email,
-                EmailNotifications = source.EmailNotifications,
-                SmsNotifications = source.SmsNotifications,
-                WebsiteNotifications = source.WebsiteNotifications,
                 ColorPreset = source.ColorPreset,
                 ProfilePicturePath = source.ProfilePicturePath,
             };
