@@ -284,6 +284,9 @@ namespace BlazorWebAppInteractive.Backend.Services
                     });
                 }
 
+                // Reload the user's information from the database to ensure the latest data is used.
+                await _context.Entry(user).ReloadAsync();
+
                 // Verify the provided password against the stored hash.
                 if (!await _userManager.CheckPasswordAsync(user, loginInputModel.Password))
                 {
