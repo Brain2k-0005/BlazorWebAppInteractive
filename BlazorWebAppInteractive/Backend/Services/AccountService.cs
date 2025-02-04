@@ -272,7 +272,7 @@ namespace BlazorWebAppInteractive.Backend.Services
             try
             {
                 // Attempt to find the user by their email address.
-                var user = await _userManager.FindByEmailAsync(loginInputModel.Email);
+                 var user = await _userManager.FindByEmailAsync(loginInputModel.Email);
 
                 // If no user is found, return a failed result with an error message.
                 if (user == null)

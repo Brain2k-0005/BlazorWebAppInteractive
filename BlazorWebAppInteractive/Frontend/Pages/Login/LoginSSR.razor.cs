@@ -34,7 +34,7 @@ namespace BlazorWebAppInteractive.Frontend.Pages.Login
             finally
             {
                 // Redirect the user to the home page regardless of the login result.
-                NavigationManager.NavigateTo("/home", true);
+                NavigationManager.NavigateTo("/",true);
             }
         }
 

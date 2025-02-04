@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,8 +30,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -48,16 +48,16 @@
         "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "CodeBeam.MudBlazor.Extensions": {
               "target": "Package",
-              "version": "[8.0.0-preview.1, )"
+              "version": "[8.0.0, )"
             },
             "Extensions.MudBlazor.StaticInput": {
               "target": "Package",
-              "version": "[3.0.0-beta.2, )"
+              "version": "[3.0.1, )"
             },
             "Heron.BlazorQRScanner": {
               "target": "Package",
@@ -65,25 +65,25 @@
             },
             "Heron.MudCalendar": {
               "target": "Package",
-              "version": "[3.0.0-beta.2, )"
+              "version": "[3.0.0, )"
             },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[9.0.1, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[9.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[9.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[9.0.1, )"
             },
             "Moq": {
               "target": "Package",
@@ -91,11 +91,11 @@
             },
             "MudBlazor": {
               "target": "Package",
-              "version": "[8.0.0-rc.2, )"
+              "version": "[8.0.0, )"
             },
             "MudBlazor.Translations": {
               "target": "Package",
-              "version": "[1.6.0, )"
+              "version": "[2.0.0, )"
             },
             "QRCoder": {
               "target": "Package",
@@ -107,7 +107,7 @@
             },
             "System.Drawing.Common": {
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[9.0.1, )"
             }
           },
           "imports": [
