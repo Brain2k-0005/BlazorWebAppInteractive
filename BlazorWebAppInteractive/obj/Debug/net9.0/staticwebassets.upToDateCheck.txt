@@ -1,0 +1,2 @@
+C:\Users\mikem\source\repos\Brain2k-0005\BlazorWebAppInteractive\BlazorWebAppInteractive\wwwroot\favicon.ico
+wwwroot\favicon.ico

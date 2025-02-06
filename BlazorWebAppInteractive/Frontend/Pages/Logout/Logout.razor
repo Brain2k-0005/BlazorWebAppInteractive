@@ -1,11 +1,9 @@
 ﻿@page "/logout"
 @attribute [Authorize]
-@rendermode InteractiveServer
 
 @code {
-    protected override Task OnInitializedAsync()
+    protected override void OnInitialized()
     {
         NavigationManager.NavigateTo("/logout/ssr", true);
-        return base.OnInitializedAsync();
     }
 }

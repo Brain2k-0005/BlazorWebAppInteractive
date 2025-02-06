@@ -1,14 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\",
+  "WorkspaceRootPath": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|c:\\users\\bemi\\source\\repos\\brain2k-0005\\blazorwebappinteractive\\blazorwebappinteractive\\frontend\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|solutionrelative:frontend\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|c:\\users\\bemi\\source\\repos\\brain2k-0005\\blazorwebappinteractive\\blazorwebappinteractive\\frontend\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|solutionrelative:frontend\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|c:\\users\\mikem\\source\\repos\\brain2k-0005\\blazorwebappinteractive\\blazorwebappinteractive\\frontend\\pages\\login\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D9A7B74-876C-46AE-97FD-187DBE693405}|BlazorWebAppInteractive.csproj|solutionrelative:frontend\\pages\\login\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,8 +13,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 399,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -29,29 +25,25 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "Frontend\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Pages\\Home.razor",
-              "RelativeToolTip": "Frontend\\Pages\\Home.razor",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-20T15:02:56.923Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Register.razor",
-              "DocumentMoniker": "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Pages\\Register.razor",
-              "RelativeDocumentMoniker": "Frontend\\Pages\\Register.razor",
-              "ToolTip": "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Pages\\Register.razor",
-              "RelativeToolTip": "Frontend\\Pages\\Register.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Pages\\Login\\Login.razor",
+              "RelativeDocumentMoniker": "Frontend\\Pages\\Login\\Login.razor",
+              "ToolTip": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\Frontend\\Pages\\Login\\Login.razor",
+              "RelativeToolTip": "Frontend\\Pages\\Login\\Login.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-20T15:02:56.42Z"
+              "WhenOpened": "2025-01-26T14:06:27.818Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -272,7 +272,7 @@ namespace BlazorWebAppInteractive.Backend.Services
             try
             {
                 // Attempt to find the user by their email address.
-                var user = await _userManager.FindByEmailAsync(loginInputModel.Email);
+                 var user = await _userManager.FindByEmailAsync(loginInputModel.Email);
 
                 // If no user is found, return a failed result with an error message.
                 if (user == null)
@@ -283,6 +283,9 @@ namespace BlazorWebAppInteractive.Backend.Services
                         Description = "Login information is not correct." // Error message for invalid login.
                     });
                 }
+
+                // Reload the user's information from the database to ensure the latest data is used.
+                await _context.Entry(user).ReloadAsync();
 
                 // Verify the provided password against the stored hash.
                 if (!await _userManager.CheckPasswordAsync(user, loginInputModel.Password))

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KF+DnHZ7rcFqDAGCheapIvhEPX6TbiykjVBNwtI1wxk=",
+  "Hash": "I5dE9VweG+dqx/hn8KoS2jeLM4EBgyHDD+pGkkA05jo=",
   "Source": "BlazorWebAppInteractive",
   "BasePath": "_content/BlazorWebAppInteractive",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BlazorWebAppInteractive\\wwwroot",
       "Source": "BlazorWebAppInteractive",
-      "ContentRoot": "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\wwwroot\\",
       "BasePath": "_content/BlazorWebAppInteractive",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\eraser.cur",
+      "Identity": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\eraser.cur",
       "SourceId": "CodeBeam.MudBlazor.Extensions",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\",
       "BasePath": "_content/CodeBeam.MudBlazor.Extensions",
       "RelativePath": "eraser.cur",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "1GL+TjmZdDm3eGG+MG1FLkkZF8SOwo3eG/7qsNX0HuU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\eraser.cur"
+      "OriginalItemSpec": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\eraser.cur"
     },
     {
-      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\Mud_Secondary.png",
+      "Identity": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\Mud_Secondary.png",
       "SourceId": "CodeBeam.MudBlazor.Extensions",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\",
       "BasePath": "_content/CodeBeam.MudBlazor.Extensions",
       "RelativePath": "Mud_Secondary.png",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "G3hYUw4Ps9P/IQ3lw2zu96RSZaOf4zU+4QkXkH8Xi3Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\Mud_Secondary.png"
+      "OriginalItemSpec": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\Mud_Secondary.png"
     },
     {
-      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.css",
+      "Identity": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.css",
       "SourceId": "CodeBeam.MudBlazor.Extensions",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\",
       "BasePath": "_content/CodeBeam.MudBlazor.Extensions",
       "RelativePath": "MudExtensions.min.css",
       "AssetKind": "All",
@@ -77,13 +77,13 @@
       "Integrity": "nxZmtgE04ACxiob+f/vhW2jZ+cf2fkxwSN0zyIIbLwo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.css"
+      "OriginalItemSpec": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.css"
     },
     {
-      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.js",
+      "Identity": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.js",
       "SourceId": "CodeBeam.MudBlazor.Extensions",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\",
       "BasePath": "_content/CodeBeam.MudBlazor.Extensions",
       "RelativePath": "MudExtensions.min.js",
       "AssetKind": "All",
@@ -98,13 +98,13 @@
       "Integrity": "kwDBiAv/G4OWRKbuGFmGPZhOyCXcoyBE5iitK8cQ79E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.js"
+      "OriginalItemSpec": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.js"
     },
     {
-      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\pencil.cur",
+      "Identity": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\pencil.cur",
       "SourceId": "CodeBeam.MudBlazor.Extensions",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\",
       "BasePath": "_content/CodeBeam.MudBlazor.Extensions",
       "RelativePath": "pencil.cur",
       "AssetKind": "All",
@@ -119,13 +119,13 @@
       "Integrity": "oDnErTJbRIXAeq4Awzx/PNkRW2XA0ClXG7BIA/jTt9E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\pencil.cur"
+      "OriginalItemSpec": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\pencil.cur"
     },
     {
-      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\extensions.mudblazor.staticinput\\3.0.0-beta.2\\staticwebassets\\NavigationObserver.js",
+      "Identity": "C:\\Users\\mikem\\.nuget\\packages\\extensions.mudblazor.staticinput\\3.0.0-beta.2\\staticwebassets\\NavigationObserver.js",
       "SourceId": "Extensions.MudBlazor.StaticInput",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\extensions.mudblazor.staticinput\\3.0.0-beta.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\mikem\\.nuget\\packages\\extensions.mudblazor.staticinput\\3.0.0-beta.2\\staticwebassets\\",
       "BasePath": "_content/Extensions.MudBlazor.StaticInput",
       "RelativePath": "NavigationObserver.js",
       "AssetKind": "All",
@@ -140,13 +140,13 @@
       "Integrity": "DQQ0ep5io47h8x2tPy4zVHllqtAOzX1DjC8oCgmNdEU=",
       "CopyToOutputDirectory": "Always",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\extensions.mudblazor.staticinput\\3.0.0-beta.2\\staticwebassets\\NavigationObserver.js"
+      "OriginalItemSpec": "C:\\Users\\mikem\\.nuget\\packages\\extensions.mudblazor.staticinput\\3.0.0-beta.2\\staticwebassets\\NavigationObserver.js"
     },
     {
-      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js",
+      "Identity": "C:\\Users\\mikem\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js",
       "SourceId": "Heron.BlazorQRScanner",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\mikem\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\",
       "BasePath": "_content/Heron.BlazorQRScanner",
       "RelativePath": "Heron.BlazorQRScanner.js",
       "AssetKind": "All",
@@ -161,13 +161,13 @@
       "Integrity": "nyHDzFzCd+Me0yG8Fwcz8HINPi4W38cYEmrh/dvnlig=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js"
+      "OriginalItemSpec": "C:\\Users\\mikem\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js"
     },
     {
-      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js.map",
+      "Identity": "C:\\Users\\mikem\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js.map",
       "SourceId": "Heron.BlazorQRScanner",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\mikem\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\",
       "BasePath": "_content/Heron.BlazorQRScanner",
       "RelativePath": "Heron.BlazorQRScanner.js.map",
       "AssetKind": "All",
@@ -182,13 +182,13 @@
       "Integrity": "dAYIDD/F7uucFsFCKu0+yoQ7RGPWpXiXmCBhqZb57PU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js.map"
+      "OriginalItemSpec": "C:\\Users\\mikem\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js.map"
     },
     {
-      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.css",
+      "Identity": "C:\\Users\\mikem\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.css",
       "SourceId": "Heron.MudCalendar",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\mikem\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\",
       "BasePath": "_content/Heron.MudCalendar",
       "RelativePath": "Heron.MudCalendar.min.css",
       "AssetKind": "All",
@@ -203,13 +203,13 @@
       "Integrity": "uf4PQ2Q8ySCG/UC5q3ijiJviTSsBWo0T07PqXC0hAYw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.css"
+      "OriginalItemSpec": "C:\\Users\\mikem\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.css"
     },
     {
-      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.js",
+      "Identity": "C:\\Users\\mikem\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.js",
       "SourceId": "Heron.MudCalendar",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\mikem\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\",
       "BasePath": "_content/Heron.MudCalendar",
       "RelativePath": "Heron.MudCalendar.min.js",
       "AssetKind": "All",
@@ -224,13 +224,13 @@
       "Integrity": "+IBpAsog3EbAuRKpM5TF+HPxVE2i/qbwDjA/ynGrkF4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.js"
+      "OriginalItemSpec": "C:\\Users\\mikem\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.js"
     },
     {
-      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.css",
+      "Identity": "C:\\Users\\mikem\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.css",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\mikem\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.css",
       "AssetKind": "All",
@@ -245,13 +245,13 @@
       "Integrity": "t6Cs3Anw0lssF1OdDJG1SEQAn0E5qfvRczv05XoLraM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.css"
+      "OriginalItemSpec": "C:\\Users\\mikem\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.css"
     },
     {
-      "Identity": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.js",
+      "Identity": "C:\\Users\\mikem\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.js",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\mikem\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.js",
       "AssetKind": "All",
@@ -266,13 +266,13 @@
       "Integrity": "JbmjZvxR4tLFLSgV1iJMEFqHW+E9BP20xnOtJdC4dZU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.js"
+      "OriginalItemSpec": "C:\\Users\\mikem\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.js"
     },
     {
-      "Identity": "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\wwwroot\\favicon.ico",
       "SourceId": "BlazorWebAppInteractive",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\wwwroot\\",
       "BasePath": "_content/BlazorWebAppInteractive",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -293,7 +293,7 @@
   "Endpoints": [
     {
       "Route": "_content/CodeBeam.MudBlazor.Extensions/eraser.8puvc5nbz2.cur",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\eraser.cur",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\eraser.cur",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -338,7 +338,7 @@
     },
     {
       "Route": "_content/CodeBeam.MudBlazor.Extensions/eraser.cur",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\eraser.cur",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\eraser.cur",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -375,7 +375,7 @@
     },
     {
       "Route": "_content/CodeBeam.MudBlazor.Extensions/Mud_Secondary.png",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\Mud_Secondary.png",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\Mud_Secondary.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -412,7 +412,7 @@
     },
     {
       "Route": "_content/CodeBeam.MudBlazor.Extensions/Mud_Secondary.tig1qhobl3.png",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\Mud_Secondary.png",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\Mud_Secondary.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -457,7 +457,7 @@
     },
     {
       "Route": "_content/CodeBeam.MudBlazor.Extensions/MudExtensions.min.css",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.css",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -494,7 +494,7 @@
     },
     {
       "Route": "_content/CodeBeam.MudBlazor.Extensions/MudExtensions.min.d4to29pfwb.js",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.js",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -539,7 +539,7 @@
     },
     {
       "Route": "_content/CodeBeam.MudBlazor.Extensions/MudExtensions.min.js",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.js",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -576,7 +576,7 @@
     },
     {
       "Route": "_content/CodeBeam.MudBlazor.Extensions/MudExtensions.min.xsd2jx2kvi.css",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.css",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\MudExtensions.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -621,7 +621,7 @@
     },
     {
       "Route": "_content/CodeBeam.MudBlazor.Extensions/pencil.cpli8oaqtf.cur",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\pencil.cur",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\pencil.cur",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -666,7 +666,7 @@
     },
     {
       "Route": "_content/CodeBeam.MudBlazor.Extensions/pencil.cur",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\pencil.cur",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\codebeam.mudblazor.extensions\\8.0.0-preview.1\\staticwebassets\\pencil.cur",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -703,7 +703,7 @@
     },
     {
       "Route": "_content/Extensions.MudBlazor.StaticInput/NavigationObserver.b2m59dspxv.js",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\extensions.mudblazor.staticinput\\3.0.0-beta.2\\staticwebassets\\NavigationObserver.js",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\extensions.mudblazor.staticinput\\3.0.0-beta.2\\staticwebassets\\NavigationObserver.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -748,7 +748,7 @@
     },
     {
       "Route": "_content/Extensions.MudBlazor.StaticInput/NavigationObserver.js",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\extensions.mudblazor.staticinput\\3.0.0-beta.2\\staticwebassets\\NavigationObserver.js",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\extensions.mudblazor.staticinput\\3.0.0-beta.2\\staticwebassets\\NavigationObserver.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -785,7 +785,7 @@
     },
     {
       "Route": "_content/Heron.BlazorQRScanner/Heron.BlazorQRScanner.js",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -822,7 +822,7 @@
     },
     {
       "Route": "_content/Heron.BlazorQRScanner/Heron.BlazorQRScanner.js.map",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js.map",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\heron.blazorqrscanner\\1.0.2\\staticwebassets\\Heron.BlazorQRScanner.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -859,7 +859,7 @@
     },
     {
       "Route": "_content/Heron.MudCalendar/Heron.MudCalendar.min.css",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.css",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -896,7 +896,7 @@
     },
     {
       "Route": "_content/Heron.MudCalendar/Heron.MudCalendar.min.faxze0q8id.css",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.css",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -941,7 +941,7 @@
     },
     {
       "Route": "_content/Heron.MudCalendar/Heron.MudCalendar.min.js",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.js",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -978,7 +978,7 @@
     },
     {
       "Route": "_content/Heron.MudCalendar/Heron.MudCalendar.min.k9r48tgq6e.js",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.js",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\heron.mudcalendar\\3.0.0-beta.2\\staticwebassets\\Heron.MudCalendar.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1023,7 +1023,7 @@
     },
     {
       "Route": "_content/MudBlazor/MudBlazor.min.3dmmitqg3v.css",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.css",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1068,7 +1068,7 @@
     },
     {
       "Route": "_content/MudBlazor/MudBlazor.min.css",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.css",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1105,7 +1105,7 @@
     },
     {
       "Route": "_content/MudBlazor/MudBlazor.min.js",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.js",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1142,7 +1142,7 @@
     },
     {
       "Route": "_content/MudBlazor/MudBlazor.min.rkr93ottrr.js",
-      "AssetFile": "C:\\Users\\bemi\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.js",
+      "AssetFile": "C:\\Users\\mikem\\.nuget\\packages\\mudblazor\\8.0.0-rc.2\\staticwebassets\\MudBlazor.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1187,7 +1187,7 @@
     },
     {
       "Route": "favicon.2jeq8efc6q.ico",
-      "AssetFile": "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1208,7 +1208,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 06 Nov 2024 09:48:32 GMT"
+          "Value": "Fri, 17 Jan 2025 17:18:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1232,7 +1232,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "C:\\Users\\bemi\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\mikem\\source\\repos\\Brain2k-0005\\BlazorWebAppInteractive\\BlazorWebAppInteractive\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1253,7 +1253,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 06 Nov 2024 09:48:32 GMT"
+          "Value": "Fri, 17 Jan 2025 17:18:34 GMT"
         },
         {
           "Name": "Cache-Control",
